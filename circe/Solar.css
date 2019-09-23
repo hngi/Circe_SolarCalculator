@@ -1,0 +1,191 @@
+html{
+    height:100%
+  }
+  body{
+    height:100%;
+    background-color: #E5E5E5;
+  }
+  .intro{
+    height:100%
+  }
+  
+  .jumbotron{
+      background-color: transparent;
+      height: 5%;
+      text-align: center;
+      font-size: 18px;
+      color: #011B33;
+  }
+  .left{
+      float: left;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color:transparent;
+    height : 100%;
+    color : black;
+  
+  }
+  .right{
+      float: right;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color:transparent;
+    height : 100%;
+    color : black;
+  }
+  @media (max-width: 1200px) { 
+    .left{
+      height:50%
+    }
+    .right{
+      height:50%
+    }
+  }
+
+  /* .snd{
+      
+  }
+
+  .fst{
+      position: relative;
+  } */
+
+
+  .pwtxt{
+      width: 80px;
+  }
+
+ .elec2{
+      padding-top: 20px;
+      padding-left: 38px;
+      font-family: Gilroy-Medium;
+font-size:18px;
+color: #000000;
+  } 
+
+.elec1{
+padding-left: 38px;
+font-family: Gilroy-Medium;
+font-size:18px;
+color: #000000;
+  }
+
+.row{
+      padding-top: 10px;
+  }
+
+  .elec{
+    /* Electronic Type */
+/* position: absolute;
+width: 280px;
+height: 41px;
+left: 117px;
+top: 258px; */
+/* float: left; */
+padding-left:38px;
+font-family: Gilroy-Medium;
+font-size:18px;
+color: #000000;
+  }
+
+  .runFooter{
+      /* Powered By Circe Energy */
+/* position: absolute;
+width: 181px;
+height: 23px;
+left: 863px;
+*/
+padding-top: 80px;
+top: 469px;
+font-family: Gilroy-SemiBoldItalic;
+font-size: 14px;
+letter-spacing: -0.05em;
+color: #EDE6E6;
+text-align: center;
+clear: both;
+  }
+
+  span{
+      padding-right: 60px;
+      float: right;
+  }
+  .txt{
+      /* Rectangle 2 */
+/* position: absolute;
+left: 682px;
+ */
+height: 76px;
+width: 170px;
+background: rgba(255, 255, 255, 0.507);
+border: 1px solid #000000;
+border-radius: 10px;
+  }
+
+  .run{
+      /* To run your Television you need: */
+
+/* position: absolute;
+width: 456px;
+height: 133px;
+left: 709px;*/
+padding-top: 100px;
+font-family: Gilroy-SemiBold;
+font-size: 26px;
+line-height: 60px;
+letter-spacing: -0.05em;
+text-align: center;
+color: #FFFFFF;
+  }
+  .runDiv{
+      /* Rectangle */
+position: absolute;
+width: auto;
+height: 55%;
+width: 55%;
+top: auto;
+background: #011B33;
+box-shadow: 0px 4px 73px rgba(0, 0, 0, 0.25);
+border-radius: 19px;
+  }
+  .sca{
+      /* Solar Calculator App */
+position: absolute;
+width: 549px;
+height: 70%;
+left: 335px;
+top: 54px;
+
+font-family: Gilroy-ExtraBold;
+font-size: 55px;
+line-height: 64px;
+letter-spacing: -0.05em;
+
+color: #000000;
+  }
+
+  .Hmspunpd{
+      /* How much solar power do i need? */
+position: absolute;
+width: 500px;
+height: 179px;
+left: 117px;
+top: 203px;
+
+font-family: Gilroy-ExtraBold;
+font-size: 30px;
+line-height: 35px;
+letter-spacing: -0.05em;
+
+color: #011B33;
+
+  }
+  .about{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color:#000;
+    color : #FFF;
+    height:100%
+  }
