@@ -156,7 +156,7 @@ h1{
     position: absolute;
     width: 680px;
     height: 48px;
-    left: 333px;
+    left: 330px;
     top: 238px;
     padding: 20px; 
     font-family: 'Gilroy-Medium';
@@ -190,6 +190,49 @@ color: #000000;
 }
  select{
     width: 170px;
+}
+.faq-content{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    text-align: left; 
+    width: 100%;
+    margin-top: 26%;
+}
+.acc h4{
+    background-color: #011B33;
+    color: #FFFFFF;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-family: Gilroy-Medium;
+    font-size: 30px;
+    line-height: 35px;
+    position: relative;
+}
+.acc h4:after{
+    position: absolute;
+    content: '+';
+    width: 100px;
+    font-size: 26px;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.acc {
+    border-bottom: 1px solid #FFF;
+}
+.ques{
+    padding: 0;
+}
+.ans{
+    font-family: Gilroy-Medium;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 25px;
+    background-color: #FFFFFF;
+    display: none;
 }
 #but{
     position: absolute;
