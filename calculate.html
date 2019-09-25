@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X_UA_compatible" content="ie-edge">
+        <link rel="stylesheet" href="style1.css">
+        <title>Circe Solar Calculator</title>
+    </head>
+    <div id="master">
+        <nav>
+            CIRCE
+        </nav>
+        <body>
+        <div id="topNav" class="navigation">
+                <span id="closebtn" onclick="navToggle()">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </span>
+              <div class="logo">
+                <img src=""/>
+              </div>
+              
+              <ul class="menulist">
+                <li><a class="menuitems" href="#">Calculator</a></li>		
+                <li><a class="menuitems" href="#">FAQs</a></li>
+              </ul>			
+              </div>
+              <div id="drop"></div>
+    
+            <h1> Solar Calculator App</h1>
+
+            <h3>How much solar power do i need ?</h3>
+              
+            <div id="form-content">
+
+            <div id="electQty">
+                <p><label for="select" name="elect" >Electronic Type</label><br/>
+                <select name="select" id="select" onchange="getElectronic()">
+                    <option value="Television">Television</option>
+                    <option value="Home Theatre">Home Theatre</option>
+                    <option value="Pressing Iron">Pressing iron</option>
+                    <option value="Refridgerator">Refridgerator</option>
+                    <option value="Electric Cooker">Electric Cooker</option>
+                    <option value="Air conditioner">Air conditioner</option>
+                    <option value="Water Heater">Water Heater</option>
+                </select>
+            </p>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <p><label for="Quantity">Quantity</label></br>
+                <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </p>
+                </div>
+                <div id="hoursPower">
+                <p><label for="hours">Hours of use per day</label><br>
+                <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <p>
+                    <label id="power">Power Consumption (Watts)</label><br/>
+                    <input type="text" id="power" required/>
+                </p>
+            </div>
+                <div id="wattBatt">
+                   <p> <label id="solar">Solar Panel Wattage</label><br/>
+                    <input type="text" id="solar" required/>
+                </p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+                    <p><label id="battery">Battery Capacity (Ah)</label><br/>
+                    <input type="text" id="battery" required/><br/>
+                </p>
+            </div>
+            
+                <div id="rect"> 
+                    <div id="text-value">
+                    To run your Television you need: <br/>
+                </div>
+                    <input type="text" id="value">
+                
+                    <div id="circe-power">Powered By Circe Energy</div>
+                </div>
+                
+                <button id="but"><div id="calc"><a href="#"> Calculate </a></div></button>
+                
+            </div><br/>
+            <p><div id="newdiv"></div></p>
+            <button id="add" onclick="newAppliance" >click to add another appliance</button>
+                <footer>
+                        &copy; 2019 Circe HNG. All rights reserved
+                </footer>
+            </div>
+                <script type="text/javascript" src="script.js"></script>
+        </body>
+</html>
