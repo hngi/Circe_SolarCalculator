@@ -195,6 +195,9 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+#ht-blue{
+    color: #011B33;
+}
 #calc{
     position: absolute;
     margin-left: 10px;

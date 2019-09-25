@@ -44,6 +44,10 @@ function getElectronic(){
     (`To run your ${select[select.selectedIndex].value} you need:`);
 };
 
+function getElectronics(){
+    document.getElementById('text-value').innerHTML =
+    (`To run your ${select[select.selectedIndex].value} you need:`);
+};
 
 document.getElementById('add').addEventListener('click', 
  newAppliance = (e) =>{
@@ -143,7 +147,7 @@ document.getElementById('add').addEventListener('click',
 	<hr>
 	<div id="electQty">
 		<p><label for="select" name="elect" >Electronic Type</label><br/>
-		<select name="select" id="select" onchange="getElectronic()">
+		<select name="select" id="select" onchange="getElectronics()">
 			<option value="Television">Television</option>
 			<option value="Home Theatre">Home Theatre</option>
 			<option value="Pressing Iron">Pressing iron</option>
@@ -219,7 +223,7 @@ document.getElementById('add').addEventListener('click',
 		<footer>
 				&copy; 2019 Circe HNG. All rights reserved
 		</footer>
-		<script type="text/javascript" src="script.js"></script>`;
+		<script type="text/javascript" src="script1.js"></script>`;
 document.getElementById('master').innerHTML = result;
 }
 );
