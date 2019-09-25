@@ -68,8 +68,8 @@ document.getElementById('add').addEventListener('click',
 	  </div>
 	  
 	  <ul class="menulist">
-		<li><a class="menuitems" href="#">Calculator</a></li>		
-		<li><a class="menuitems" href="#">FAQs</a></li>
+	  <li><a class="menuitems" href="calculate.html">Calculator</a></li>		
+	  <li><a class="menuitems" href="faq.html">FAQs</a></li>
 	  </ul>			
 	  </div>
 	  <div id="drop"></div>

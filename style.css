@@ -16,8 +16,8 @@ nav{
     position: absolute;
     width: 297px;
     height: 120px;
-    left: 95px;
-    top: 51px;
+    left: 0px;
+    top: 31px;
 
     font-family: 'Ginger Peachy NF';
     font-size: 28px;
@@ -27,7 +27,7 @@ nav{
     width: 15%;
     position: fixed;
     z-index: 1;
-    top: 51px;
+    top: 31px;
     background: #011B33;
     left: 85%;
     box-shadow: 0 4px 4px -3px #232323;
@@ -146,11 +146,11 @@ h1{
     position: absolute;
     width: 799px;
     height: 74px;
-    left: 355px;
-    top: 136px;
-
+    left: 300px;
+    top: 50px;
+    text-align: center;
     font-family: 'Gilroy ExtraBold';
-    font-size: 50px;
+    font-size: 40px;
     line-height: 59px;
 }
 h3{
