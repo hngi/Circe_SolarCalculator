@@ -1,20 +1,64 @@
+
 html{
     height:100%
   }
   body{
+  position: relative;
+width: auto;
+height: auto;
+
+background: #F9FCFF;
     height:100%;
     background-color: #E5E5E5;
+  }
+
+  .logo{
+    /* CIRCE */
+/* position: absolute;
+width: 105px;
+height: 42px;
+left: 124px;
+top: 54px; */
+font-family: 'Ginger Peachy NF' !important;
+font-size: 28px;
+/* line-height: 38px; */
+text-align: center;
+color: #011B33;
+
   }
   .intro{
     height:100%
   }
+/* start home */
+  .card{
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    background-color: transparent !important;
+    border: none !important;
+    }
+    
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+
+    /* end home */
   
-  .jumbotron{
-      background-color: transparent;
-      height: 5%;
-      text-align: center;
-      font-size: 18px;
-      color: #011B33;
+  .jumb{
+      
+position: absolute;
+width: 364px;
+height: 89px;
+left: 513px;
+top: 106px;
+font-family: 'Gilroy-ExtraBold';
+font-size: 40px;
+line-height: 47px;
+letter-spacing: -0.05em;
+color: #000000;
+
   }
   .left{
       float: left;
@@ -44,31 +88,78 @@ html{
     }
   }
 
-  /* .snd{
-      
-  }
-
-  .fst{
-      position: relative;
-  } */
-
-
-  .pwtxt{
-      width: 80px;
-  }
-
  .elec2{
-      padding-top: 20px;
-      padding-left: 38px;
-      font-family: Gilroy-Medium;
-font-size:18px;
+      /* Solar Panel Wattage */
+position: absolute;
+width: 280px;
+height: 41px;
+left: 117px;
+top: 446px;
+font-size: 17px;
+line-height: 18px;
+letter-spacing: -0.05em;
+font-family: 'Gilroy-Medium';
 color: #000000;
-  } 
+  }
+
+  .elec4{
+    /* Battery Capacity ( Ah ) */
+position: absolute;
+width: 280px;
+height: 41px;
+left: 277px;
+top: 446px;
+font-family: 'Gilroy-Medium';
+font-size: 17px;
+line-height: 18px;
+letter-spacing: -0.05em;
+color: #000000;
+
+  }
+
+  .elec5{
+    /* Quantity */
+position: absolute;
+width: 272px;
+height: 61px;
+left: 277px;
+top: 263px;
+font-family: 'Gilroy-Medium';
+font-size: 17px;
+line-height: 18px;
+letter-spacing: -0.05em;
+color: #000000;
+
+  }
+  
+  .elec3{
+    /* Hours of use per day */
+position: absolute;
+width: 272px;
+height: 61px;
+left: 116px;
+top: 360px;
+font-size: 17px;
+line-height: 18px;
+letter-spacing: -0.05em;
+color: #000000;
+font-family: 'Gilroy-Medium';
+
+  }
 
 .elec1{
-padding-left: 38px;
-font-family: Gilroy-Medium;
-font-size:18px;
+  /* Power Consumption ( In watts ) */
+  position: absolute;
+width: 190px;
+height: 14px;
+left: 278px;
+top: 360px;
+font-size: 17px;
+line-height: 18px;
+letter-spacing: -0.05em;
+/* padding-left: 38px; */
+font-family: 'Gilroy-Medium';
+/* font-size:18px; */
 color: #000000;
   }
 
@@ -77,6 +168,15 @@ color: #000000;
   }
 
   .elec{
+
+    position: absolute;
+width: 280px;
+height: 41px;
+left: 117px;
+top: 263px;
+font-size: 17px;
+line-height: 18px;
+letter-spacing: -0.05em;
     /* Electronic Type */
 /* position: absolute;
 width: 280px;
@@ -84,103 +184,113 @@ height: 41px;
 left: 117px;
 top: 258px; */
 /* float: left; */
-padding-left:38px;
-font-family: Gilroy-Medium;
-font-size:18px;
-color: #000000;
+/* padding-left:38px; */
+font-family: 'Gilroy-Medium';
+/* font-size:18px;
+color: #000000; */
   }
 
   .runFooter{
-      /* Powered By Circe Energy */
-/* position: absolute;
-width: 181px;
 height: 23px;
-left: 863px;
-*/
-padding-top: 80px;
 top: 469px;
-font-family: Gilroy-SemiBoldItalic;
-font-size: 14px;
+line-height: 16px;
+padding-top: 90px;
+font-family: 'Gilroy-SemiBoldItalic';
+font-size: 16px;
 letter-spacing: -0.05em;
 color: #EDE6E6;
 text-align: center;
 clear: both;
   }
 
-  span{
+  /* span{
       padding-right: 60px;
       float: right;
-  }
+  } */
   .txt{
+padding-left: 80px;
+  }
+  .txt input{
       /* Rectangle 2 */
-/* position: absolute;
-left: 682px;
- */
-height: 76px;
-width: 170px;
-background: rgba(255, 255, 255, 0.507);
-border: 1px solid #000000;
+ width: 80%;
 border-radius: 10px;
   }
 
   .run{
       /* To run your Television you need: */
 
-/* position: absolute;
-width: 456px;
-height: 133px;
-left: 709px;*/
-padding-top: 100px;
-font-family: Gilroy-SemiBold;
+padding-top: 50px;
+font-family: 'Gilroy-SemiBold';
 font-size: 26px;
 line-height: 60px;
 letter-spacing: -0.05em;
 text-align: center;
 color: #FFFFFF;
   }
-  .runDiv{
-      /* Rectangle */
+
+  .elec6{
+    /* calculate */
 position: absolute;
-width: auto;
-height: 55%;
-width: 55%;
-top: auto;
+width: 162px;
+height: 34px;
+left: 116px;
+top: 560px;
+background: #011B33;
+border: 1px solid #011B33;
+box-sizing: border-box;
+border-radius: 5px;
+  }
+
+  .elec6 span{
+    /* Calculate */
+  left: 142px;
+font-size: 26px;
+line-height: 30px;
+letter-spacing: -0.05em;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #FFFFFF;
+
+  }
+  
+  .runDiv{
+    /* Rectangle */
+    position: absolute;
+width: 80%;
+height: 335px;
+top: 200px;
 background: #011B33;
 box-shadow: 0px 4px 73px rgba(0, 0, 0, 0.25);
 border-radius: 19px;
+      
   }
   .sca{
       /* Solar Calculator App */
-position: absolute;
-width: 549px;
-height: 70%;
-left: 335px;
-top: 54px;
-
-font-family: Gilroy-ExtraBold;
-font-size: 55px;
-line-height: 64px;
-letter-spacing: -0.05em;
-
+      position: absolute;
+      width: 364px;
+      height: 89px;
+      left: 513px;
+      top: 106px;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: -0.05em;
+font-family: 'Gilroy-ExtraBold';
 color: #000000;
   }
 
   .Hmspunpd{
       /* How much solar power do i need? */
-position: absolute;
-width: 500px;
-height: 179px;
-left: 117px;
-top: 203px;
-
-font-family: Gilroy-ExtraBold;
+      position: absolute;
+      width: 500px;
+      height: 179px;
+      left: 117px;
+      top: 187px;
+font-family: 'Gilroy-ExtraBold';
 font-size: 30px;
 line-height: 35px;
 letter-spacing: -0.05em;
-
 color: #011B33;
 
-  }
+  }  
   .about{
     display : flex;
     justify-content : center;
@@ -189,3 +299,150 @@ color: #011B33;
     color : #FFF;
     height:100%
   }
+
+  .footer{
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
+
+  /* Calculate your Solar Requirement */
+
+.homhed{
+  /* position: absolute;
+width: 799px;
+height: 74px;
+left: 355px;
+top: 376px; */
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 40px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.homcont{
+  /* Circe is an app that allows you calculate how much power needed to run your home */
+
+  /* position: absolute;
+  width: 842px;
+  height: 116px;
+  left: 333px;
+  top: 458px; */
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 23px;
+line-height: 29px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.calcnow{
+  /* Calculate Now */
+/* position: absolute;
+width: 404px;
+height: 76px;
+left: 518px;
+top: 598px; */
+text-align: center;
+/* height: 55px; */
+margin: auto;
+/* width: 40%; */
+border-radius: 10px;
+font-size: 38px;
+color: #000000;
+}
+.calcnow a:hover{
+  background-color: rgba(1, 27, 51, 0.801);
+  text-decoration: none;
+}
+
+/* faqq */
+.faq1{
+  /* Frequently Asked Questions */
+/* position: absolute;
+width: 40%;
+height: 20%; */
+/* left: 165px;
+top: 172px;
+font-family: 'Gilroy-ExtraBold';
+font-size: 35px;
+line-height: 33px;
+text-align: center;
+color: #011B33;
+margin: auto;*/
+font-size: 35px;
+line-height: 33px;
+color: #011B33;
+font-family: 'Gilroy-ExtraBold';
+text-align: center;
+top: 172px;
+}
+.faqq {
+  
+  position: relative;
+width: 90%;
+height: 40%;
+
+background: #FFFFFF;
+  background-color: transparent;
+  outline: none !important;
+}
+.faqq .widget{
+  background-color: transparent;
+  padding-top: 5px;
+  padding-left: 55px;
+}
+
+.faqq .label{
+	background-color: green;
+	font-size: 14px;
+}
+
+.faqq .panel, .faqq .panel-heading {
+	background-color: rgba(1, 27, 51, 0.623);
+	
+	
+}
+.faqq .panel-heading {
+  background-color: rgba(1, 27, 51, 0.904);
+  color: white;
+}
+
+.faqq .panel-body p, .faqq .panel-heading a{
+	color: white;
+}
+.faqq .panel-body p {
+	font-size: 19px;
+}
+.faqq .panel-heading .ing{
+	font-size: 16px;
+}
+
+/* .faqq .panel-heading a:hover{
+	color: rgb(0,175,239);
+} */
+
+.faqq .panel-heading span{
+	color: red;
+}
+/* End faqq */
+
+.faqq, .terms, .lease, .privacy, .about, .client, .contact, .careers, .team{
+	text-align: justify;
+}
+
+.faqq h2, .terms h1, .lease h1, .privacy h1, .about h1, .client h1, .contact h1, .contact h4, .careers h1, .team h1{
+	text-align: center;
+	
+	
+}
+
+.faqq h2, .terms h2, .privacy h2, .lease h3{
+	font-variant: small-caps;
+	font-weight: 430;
+	font-size: 21px;
+}
+
+section{
+}

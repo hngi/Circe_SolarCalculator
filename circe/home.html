@@ -1,157 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Solar Calculator</title>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    <title>Home|Solar Calculator</title>
     <!-- Bootstrap core CSS -->
     <link href="./bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
     <link href="./Solar.css" rel="stylesheet" />
-
+   <!--Made with love by Mutiullah Samim -->
+   
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
-
-<body>
-
+<body style="background-color: rgba(1, 27, 51, 0.829);">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">CIRCE Energy</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-        </div>
-    </nav>
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-        <h1 class="display-3"><b>Solar Calculator App</b></h1>
-    </header>
-    <!-- /.container -->
-    <section class="intro">
-        <row>
-            <div class="col-lg-6 col-sm-12 left">
-                <p class="Hmspunpd">
-                    How Much Solar Power Do you Need?
-                </p>
-
-                <div class="row">
-                <span class="elec">Electronic Type:
-                <div class="dropdown drp1" >
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                          Select
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">TV</a>
-                          <a class="dropdown-item" href="#">Samsung</a>
-                          <a class="dropdown-item" href="#">Fridge</a>
-                        </div>
-                      </div>
-                </span>
-
-                      <form class="elec2">Hours Of Use Per Day:<br>
-                <input class="pwtxt" type="text"></input>
-                      </form>
+    <nav  class="navbar navbar-expand-lg fixed-top">
+            <div style="background-color: transparent;" class="container">
+                    <div class="navbar-header">
+                <a class="navbar-brand " style="color: rgb(254, 254, 255); font-size: 28px;" href="home.html">CIRCE</a>
                     </div>
-                    
-                    <div class="row">
-                            <form class="elec1">Power Consumption <i>(In Watts)</i>:<br>
-                                <input class="pwtxt" type="text"></input>
-                                      </form>
-
-                                      <form class="elec2">Quantity:<br>
-                                        <input class="pwtxt" type="text"></input>
-                                              </form>
-
-                      <!-- <span class="elec2">Quantity:
-                            <div class="dropdown drp" >
-                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                      Select
-                                    </button>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">TV</a>
-                                      <a class="dropdown-item" href="#">Samsung</a>
-                                      <a class="dropdown-item" href="#">Fridge</a>
-                                    </div>
-                                  </div>
-                            </span>                                  -->
-                        </div>
-            </div>
-
-            
-            <div class="col-lg-6 col-sm-12 right">
-                <div class="runDiv">
-                    <p class="run">
-                        To Run You Appliance You Need:
-                    </p>
-                    <span>
-                        <input type="text" class="txt"></input>
-                    </span>
-                    <div class="runFooter">
-                        <p><i>Powered by CIRCE Energy</i></p>
-                    </div>
-                </div>
-                
-            </div>
-        </row>
-    </section>
-    <!-- <div class="container-fluid">
-        <div class="row no-gutter">
-          <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-          <div class="col-md-8 col-lg-6">
-            <div class="login d-flex align-items-center py-5">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-9 col-lg-8 mx-auto">
-                    <h3 class="login-heading mb-4">Welcome back!</h3>
-                    <form>
-                      <div class="form-label-group">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                        <label for="inputEmail">Email address</label>
-                      </div>
-      
-                      <div class="form-label-group">
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                        <label for="inputPassword">Password</label>
-                      </div>
-      
-                      <div class="custom-control custom-checkbox mb-3">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Remember password</label>
-                      </div>
-                      <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                      <div class="text-center">
-                        <a class="small" href="#">Forgot password?</a></div>
-                    </form>
+                <ul class="nav navbar-nav" >
+                        <li style="color: rgb(254, 254, 255) !important; font-size: 18px;"></li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                      </ul>
                   </div>
-                </div>
-              </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
             </div>
-          </div>
-        </div>
-      </div>   -->
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Circe 2019</p>
+        </nav>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+                <div class="card-body">
+                    <div class="homhed">
+                            <p>Calculate your Solar Requirement</p>
+                    </div>
+                    <div class="homcont">
+                        <p>Circe is an app that allows you calculate how much power needed to run your home</p>
+                    </div>                     
+                </div>
+                <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 calcnow">
+                            <a href="calc.html"><input type="" class="btn btn-lg btn-block" style="background-color: white; font-size: 30px;" value="Calculate Now"/></a>
+                        </div>
+                <!-- <div class="calcnow">
+                      <button> <a href="calc.html"> Calculate Now </a> </button>
+                </div>  -->
+			<!-- <div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-twitter-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="username">
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" placeholder="password">
+					</div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Login" class="btn float-right login_btn">
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a href="#">Sign Up</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Forgot your password?</a>
+				</div>
+            </div> -->
+            
+		</div>
+	</div>
+</div>
+</div>
+<footer class="footer">
+        <div >
+            <p class="m-0 text-center text-white">Copyright &copy;2019 Circe HNG. All Rights Reserved</p>
         </div>
         <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="./jquery-3.3.1.min.js"></script>
-    <script src="./bootstrap.bundle.min.js"></script>
-    <script src="./jquery-3.3.1.slim.js"></script>
-
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./jquery-3.3.1.slim.js"></script>
 </body>
-
 </html>
