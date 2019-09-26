@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solar App Homepage</title>
+        <!-- Add icon library -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                background: #192843;
+                width: 900px;
+                height: 600px;
+                border: 
+
+            }
+
+            .sidenav {
+  height: 100%;
+  width: 270px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #192843;
+  display: block;
+  font-family: 'Gill Sans MT'
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+            .header {
+                position: relative;
+                width: 297px;
+                height: 147px;
+                left: 270px;
+                top:45px;
+                font-family: Ginger Peachy NF;
+                font-size: 28px;
+                line-height: 38px;
+                text-align: left;
+                color: #ffffff;
+            }
+            .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .body{
+  padding-top: 102px;
+}
+            .h4 {
+                position: absolute;
+                width: 799px;
+                height: 74px;
+                left: 272px;
+                top: 100px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32px;
+                font: 3em 'Gill Sans MT';
+                line-height: 38px;
+                text-align: left;
+                color: #ffffff;
+            }
+            .h5 {
+                position: relative;
+                width: 750px;
+                height: 116px;
+                left: 272px;
+                top:70px;
+                font-family: Gilroy-medium;
+                font-size: 40px;
+                color: #ffffff;
+                text-align: left;
+                line-height: 38px;
+            }
+            
+            .button{
+                position: relative;
+                width: 300px;
+                height: 55px;
+                top:100px;
+                left: 500px;
+                right: 200px;
+                background: #f9fcff;
+                box-shadow: rgba(0, 0, 0, 0.25)
+                0px 4px 4px;
+                border-radius: 18px;
+                color: #000000;
+                font-family: 'Gill Sans MT';
+                font-size: 30px;
+                text-align: center;
+                border: none;
+                text-shadow: rgba(0, 0, 0, 0.25)
+                0px 4px 4px;
+            }
+            .button:hover{
+                background: #192841c5;
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.25) 0 17px 50px 0 rgba(0, 0, 0, 0.24)
+            }
+            .p {
+                position: relative;
+                width: 336px;
+                height: 28px;
+                top: 185px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                float: center;
+                color: white;
+                text-align: center;
+                left: 500px;
+                right: 200px;
+            }
+
+            /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+        </style>
+<div class="sidenav">
+  <a href="#sumbo vitae.html">Calculator</a>
+  <a href="#faqs">FAQs</a>
+  <a href="#signin">Sign In</a>
+  <a href="#csignup">Sign Up</a>
+</div>
+       <div class="body" id="myHeader">
+          <body onload="checkCookie()">
+        <div class="header">
+            <header>CIRCE</header>
+        </div>
+        <div class="h4">
+            <h4>Calculate your Solar Requirement</h4>
+         </div>
+         <div class="h5"> 
+            <h6>Circe is an an app that allows you calculate how much power needed to run your home.</h6>
+         </div>   
+            <footer>        
+                <button class="button">Calculate Now</button>
+          <div class="p">      
+                <p>©2019 HNG.All right reserved</p>
+          </div>
+            </footer>
+        </body>
+            <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script>
+       </div>
+        <body>
+    </head>
+</html>
