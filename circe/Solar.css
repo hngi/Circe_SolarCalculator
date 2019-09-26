@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
 
 html{
-    height:100%
+    height:90%
   }
+
   body{
   position: relative;
 width: auto;
-height: auto;
+/* height: auto; */
 
 background: #F9FCFF;
     height:100%;
@@ -27,20 +30,30 @@ color: #011B33;
 
   }
   .intro{
-    height:100%
+    height:100%;
+    border: #E5E5E5 1px solid;
   }
 /* start home */
   .card{
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 70%;
+    /* height: 70%; */
+    margin-top: 50px;
+    /* margin-bottom: auto; */
+    /* width: 70%; */
     background-color: transparent !important;
     border: none !important;
+    /*
+    text-align: center; */
+    margin:auto;
+
+    position: relative;
+width: 90%;
+height: 60%;
+
+/* background: #011B33; */
     }
     
     .container{
-    height: 100%;
+    height: auto;
     align-content: center;
     }
 
@@ -48,11 +61,11 @@ color: #011B33;
   
   .jumb{
       
-position: absolute;
+/* position: absolute;
 width: 364px;
 height: 89px;
 left: 513px;
-top: 106px;
+top: 106px; */
 font-family: 'Gilroy-ExtraBold';
 font-size: 40px;
 line-height: 47px;
@@ -91,10 +104,10 @@ color: #000000;
  .elec2{
       /* Solar Panel Wattage */
 position: absolute;
-width: 280px;
-height: 41px;
-left: 117px;
-top: 446px;
+width: auto;
+height: auto;
+left: 130px;
+top: 320px;;
 font-size: 17px;
 line-height: 18px;
 letter-spacing: -0.05em;
@@ -105,10 +118,10 @@ color: #000000;
   .elec4{
     /* Battery Capacity ( Ah ) */
 position: absolute;
-width: 280px;
-height: 41px;
-left: 277px;
-top: 446px;
+width: auto;
+height: auto;
+left: 290px;
+top: 320px;
 font-family: 'Gilroy-Medium';
 font-size: 17px;
 line-height: 18px;
@@ -120,10 +133,10 @@ color: #000000;
   .elec5{
     /* Quantity */
 position: absolute;
-width: 272px;
-height: 61px;
-left: 277px;
-top: 263px;
+width: auto;
+height: auto;
+left: 290px;
+top: 143px;
 font-family: 'Gilroy-Medium';
 font-size: 17px;
 line-height: 18px;
@@ -135,10 +148,10 @@ color: #000000;
   .elec3{
     /* Hours of use per day */
 position: absolute;
-width: 272px;
-height: 61px;
-left: 116px;
-top: 360px;
+width: auto;
+height: auto;
+left: 130px;
+top: 230px;
 font-size: 17px;
 line-height: 18px;
 letter-spacing: -0.05em;
@@ -150,10 +163,10 @@ font-family: 'Gilroy-Medium';
 .elec1{
   /* Power Consumption ( In watts ) */
   position: absolute;
-width: 190px;
-height: 14px;
-left: 278px;
-top: 360px;
+width: auto;
+height: auto;
+left: 290px;
+top: 230px;
 font-size: 17px;
 line-height: 18px;
 letter-spacing: -0.05em;
@@ -163,17 +176,47 @@ font-family: 'Gilroy-Medium';
 color: #000000;
   }
 
+  .elec7{
+    /* Hours of Sunlight per day */
+
+
+position: absolute;
+width: auto;
+height: auto;
+left: 460px;
+top: 313px;
+font-family: 'Gilroy-Medium';
+font-size: 15px;
+line-height: 18px;
+letter-spacing: -0.05em;
+color: #000000;
+  }
+
+  .elec8{
+    /* Battery Voltage */
+position: absolute;
+width: auto;
+height: auto;
+left: 460px;
+top: 230px;
+font-family: 'Gilroy-Medium';
+font-size: 15px;
+line-height: 18px;
+letter-spacing: -0.05em;
+color: #000000;
+  }
+
 .row{
-      padding-top: 10px;
+      padding-top: 0px;
   }
 
   .elec{
 
     position: absolute;
-width: 280px;
-height: 41px;
-left: 117px;
-top: 263px;
+width: auto;
+height: auto;
+left: 130px;
+top: 143px;
 font-size: 17px;
 line-height: 18px;
 letter-spacing: -0.05em;
@@ -191,10 +234,12 @@ color: #000000; */
   }
 
   .runFooter{
-height: 23px;
-top: 469px;
-line-height: 16px;
-padding-top: 90px;
+height: 10%;
+width: auto;
+margin-top: 110px;
+/* top: 469px; */
+/* line-height: 16px; */
+/* padding-top: 90px; */
 font-family: 'Gilroy-SemiBoldItalic';
 font-size: 16px;
 letter-spacing: -0.05em;
@@ -208,21 +253,35 @@ clear: both;
       float: right;
   } */
   .txt{
-padding-left: 80px;
+/* padding-left: 80px; */
+height: 13%;
+width: 90%;
+margin: auto;
+
   }
   .txt input{
       /* Rectangle 2 */
- width: 80%;
+      margin-left:20px;
+      height: 105%;
+ width: 90%;
 border-radius: 10px;
+color: #000000;
+font-size: 18px;
+font-weight: 700;
+background-color: grey;
+/* margin: auto; */
   }
 
   .run{
       /* To run your Television you need: */
-
-padding-top: 50px;
+width: auto;
+height: 12%;
+margin-top: 55px;
+/* padding-top: 50px; */
 font-family: 'Gilroy-SemiBold';
-font-size: 26px;
-line-height: 60px;
+font-size: 24px;
+font-weight: 900;
+/* line-height: 60px; */
 letter-spacing: -0.05em;
 text-align: center;
 color: #FFFFFF;
@@ -231,33 +290,39 @@ color: #FFFFFF;
   .elec6{
     /* calculate */
 position: absolute;
-width: 162px;
-height: 34px;
-left: 116px;
-top: 560px;
+width: 35%;
+height: 6%;
+left: 210px;
+top: 400px;
 background: #011B33;
 border: 1px solid #011B33;
-box-sizing: border-box;
+/* box-sizing: border-box; */
 border-radius: 5px;
+margin: auto;
+
   }
 
   .elec6 span{
     /* Calculate */
-  left: 142px;
-font-size: 26px;
+    padding: 7px;
+  /* left: 152px; */
+  margin-left: 50px;
+font-size: 25px;
 line-height: 30px;
 letter-spacing: -0.05em;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 color: #FFFFFF;
+text-align: center;
+text-decoration: none !important;
 
   }
   
   .runDiv{
     /* Rectangle */
     position: absolute;
-width: 80%;
-height: 335px;
-top: 200px;
+width: 70%;
+height: 55%;
+top: 80px;
 background: #011B33;
 box-shadow: 0px 4px 73px rgba(0, 0, 0, 0.25);
 border-radius: 19px;
@@ -265,13 +330,17 @@ border-radius: 19px;
   }
   .sca{
       /* Solar Calculator App */
-      position: absolute;
-      width: 364px;
-      height: 89px;
-      left: 513px;
-      top: 106px;
+      /* position: absolute; */
+      width: auto;
+      height: auto;
+      /* left: 513px; */
+      /* top: 106px; */
+      margin-top: 75px;
+      /* scroll-margin-bottom: auto;
+      scroll-padding-bottom: 50px; */
+      /* padding-top: 90px; */
       font-size: 40px;
-      line-height: 47px;
+      /* line-height: 47px; */
       letter-spacing: -0.05em;
 font-family: 'Gilroy-ExtraBold';
 color: #000000;
@@ -280,25 +349,25 @@ color: #000000;
   .Hmspunpd{
       /* How much solar power do i need? */
       position: absolute;
-      width: 500px;
-      height: 179px;
-      left: 117px;
-      top: 187px;
+      width: auto;
+      height: auto;
+      left: 147px;
+      top: 80px;
 font-family: 'Gilroy-ExtraBold';
-font-size: 30px;
+font-size: 27px;
 line-height: 35px;
 letter-spacing: -0.05em;
 color: #011B33;
 
   }  
-  .about{
+  /* .about{
     display : flex;
     justify-content : center;
     align-items : center;
     background-color:#000;
     color : #FFF;
     height:100%
-  }
+  } */
 
   .footer{
     padding-bottom: 7px;
@@ -307,91 +376,94 @@ color: #011B33;
 
   /* Calculate your Solar Requirement */
 
+  /* .card-body{
+    border: 1px red solid;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: auto;
+  } */
 .homhed{
-  /* position: absolute;
-width: 799px;
-height: 74px;
-left: 355px;
-top: 376px; */
-
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 40px;
+  position: absolute;
+width: 200%;
+height: auto;
+/* left: 355px; */
+top: 66px;
+margin: auto;
+font-family: 'Gilroy-ExtraBold';
+font-size: 45px;
+line-height: 59px;
 text-align: center;
-
 color: #FFFFFF;
 }
 
 .homcont{
   /* Circe is an app that allows you calculate how much power needed to run your home */
-
-  /* position: absolute;
-  width: 842px;
-  height: 116px;
-  left: 333px;
-  top: 458px; */
-
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 23px;
-line-height: 29px;
+position: absolute;
+width: 189%;
+height: auto;
+/* left: 133px; */
+top: 138px;
+font-family: 'Gilroy-Medium';
+font-size: 30px;
+line-height: 39px;
 text-align: center;
 color: #FFFFFF;
+margin: auto;
 }
 
 .calcnow{
+  position: absolute;
+width: 70%;
+height: auto;
+
+background: #F9FCFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
   /* Calculate Now */
-/* position: absolute;
-width: 404px;
-height: 76px;
-left: 518px;
-top: 598px; */
+left: 358px;
+top: 218px;
+font-family: 'Gilroy-ExtraBold';
+font-size: 52px;
+line-height: 61px;
 text-align: center;
-/* height: 55px; */
-margin: auto;
-/* width: 40%; */
-border-radius: 10px;
-font-size: 38px;
 color: #000000;
+border-radius: 10px;
+
 }
-.calcnow a:hover{
-  background-color: rgba(1, 27, 51, 0.801);
-  text-decoration: none;
-}
+
 
 /* faqq */
 .faq1{
-  /* Frequently Asked Questions */
-/* position: absolute;
-width: 40%;
-height: 20%; */
-/* left: 165px;
-top: 172px;
+  position: absolute;
+width: auto;
+height: auto;
+left: 315px;
+top: 12px;
 font-family: 'Gilroy-ExtraBold';
-font-size: 35px;
-line-height: 33px;
+font-size: 45px;
+line-height: 53px;
 text-align: center;
 color: #011B33;
-margin: auto;*/
-font-size: 35px;
-line-height: 33px;
-color: #011B33;
-font-family: 'Gilroy-ExtraBold';
-text-align: center;
-top: 172px;
+margin-top: 30px;
+
 }
 .faqq {
   
+  
   position: relative;
-width: 90%;
-height: 40%;
-
+width: auto;
+height: 95%;
+margin-top: 51px;
 background: #FFFFFF;
   background-color: transparent;
   outline: none !important;
 }
 .faqq .widget{
   background-color: transparent;
-  padding-top: 5px;
-  padding-left: 55px;
+  margin-top: 100px;
+  margin-left: 110px;
+  padding-left: 10px;
 }
 
 .faqq .label{
@@ -444,5 +516,169 @@ background: #FFFFFF;
 	font-size: 21px;
 }
 
-section{
+
+.error-container {
+  text-align: center;
+  font-size: 180px;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 800;
+  margin: 20px 15px;
+}
+.error-container > span {
+  display: inline-block;
+  line-height: 0.7;
+  position: relative;
+  color: #FFB485;
+}
+.error-container > span {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.error-container > span:nth-of-type(1) {
+  color: #D1F2A5;
+  animation: colordancing 4s infinite;
+}
+.error-container > span:nth-of-type(3) {
+  color: #F56991;
+  animation: colordancing2 4s infinite;
+}
+.error-container > span:nth-of-type(2) {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+}
+.error-container > span:nth-of-type(2):before,
+.error-container > span:nth-of-type(2):after {
+	border-radius: 0%;
+	content:"";
+	position: absolute;
+	top: 0; left: 0;
+	width: inherit; height: inherit;
+  border-radius: 999px;
+	box-shadow: inset 30px 0 0 rgba(209, 242, 165, 0.4),
+				inset 0 30px 0 rgba(239, 250, 180, 0.4),
+				inset -30px 0 0 rgba(255, 196, 140, 0.4),	
+				inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+  animation: shadowsdancing 4s infinite;
+}
+.error-container > span:nth-of-type(2):before {
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+			transform: rotate(45deg);
+}
+
+.screen-reader-text {
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+}
+@keyframes shadowsdancing {
+  0% {
+    box-shadow: inset 30px 0 0 rgba(209, 242, 165, 0.4),
+				inset 0 30px 0 rgba(239, 250, 180, 0.4),
+				inset -30px 0 0 rgba(255, 196, 140, 0.4),	
+				inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+  }
+  25% {
+    box-shadow: inset 30px 0 0 rgba(245, 105, 145, 0.4),
+				inset 0 30px 0 rgba(209, 242, 165, 0.4),
+				inset -30px 0 0 rgba(239, 250, 180, 0.4),	
+				inset 0 -30px 0 rgba(255, 196, 140, 0.4);
+  }
+  50% {
+     box-shadow: inset 30px 0 0 rgba(255, 196, 140, 0.4),
+				inset 0 30px 0 rgba(245, 105, 145, 0.4),
+				inset -30px 0 0 rgba(209, 242, 165, 0.4),	
+				inset 0 -30px 0 rgba(239, 250, 180, 0.4);
+  }
+  75% {
+   box-shadow: inset 30px 0 0 rgba(239, 250, 180, 0.4),
+				inset 0 30px 0 rgba(255, 196, 140, 0.4),
+				inset -30px 0 0 rgba(245, 105, 145, 0.4),	
+				inset 0 -30px 0 rgba(209, 242, 165, 0.4);
+  }
+  100% {
+    box-shadow: inset 30px 0 0 rgba(209, 242, 165, 0.4),
+				inset 0 30px 0 rgba(239, 250, 180, 0.4),
+				inset -30px 0 0 rgba(255, 196, 140, 0.4),	
+				inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+  }
+}
+@keyframes colordancing {
+  0% {
+    color: #D1F2A5;
+  }
+  25% {
+    color: #F56991;
+  }
+  50% {
+    color: #FFC48C;
+  }
+  75% {
+    color: #EFFAB4;
+  }
+  100% {
+    color: #D1F2A5;
+  }
+}
+@keyframes colordancing2 {
+  0% {
+    color: #FFC48C;
+  }
+  25% {
+    color: #EFFAB4;
+  }
+  50% {
+    color: #D1F2A5;
+  }
+  75% {
+    color: #F56991;
+  }
+  100% {
+    color: #FFC48C;
+  }
+}
+
+/* demo stuff */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* body {
+  background-color: #416475;
+  margin-bottom: 50px;
+} */
+html, button, input, select, textarea {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: #92a4ad;
+}
+h1 {
+  text-align: center;
+  /* margin: 30px 15px; */
+}
+.zoom-area { 
+  max-width: 490px;
+  margin: 30px auto 30px;
+  font-size: 19px;
+  text-align: center;
+}
+.link-container {
+  text-align: center;
+}
+a.more-link {
+  text-transform: uppercase;
+  font-size: 13px;
+    background-color: #92a4ad;
+    padding: 10px 15px;
+    border-radius: 0;
+    color: #416475;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    text-decoration: none;
+  margin-top: 50px;
+  letter-spacing: 1px;
 }

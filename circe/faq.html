@@ -18,29 +18,45 @@
 </head>
 <body >
     <!-- Navigation -->
-    <nav  class="navbar navbar-expand-lg fixed-top">
+     <!-- Navigation -->
+     <nav  class="navbar navbar-expand-lg fixed-top">
             <div style="background-color: transparent;" class="container">
                     <div class="navbar-header">
-                <a class="navbar-brand " style="color: rgb(1, 27, 51); font-size: 28px;" href="home.html">CIRCE</a>
+                            <a class="navbar-brand logo" href="home.html">CIRCE</a>
                     </div>
-                <ul class="nav navbar-nav" >
+                <!-- <ul class="nav navbar-nav" >
                         <li style="color: rgb(254, 254, 255) !important; font-size: 18px;"></li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
                         <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                      </ul>
+                      </ul> -->
                   </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span style="color: white" class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="about">ABOUT
+                              <span class="sr-only">(current)</span>
+                            </a>
+                          </li>
+                          <!-- <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                          </li> -->
+                          <li class="nav-item">
+                            <a class="nav-link" href="calc.html">Calculator</a>
+                          </li>
+                          <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li> -->
+                        </ul>
+                      </div>
     
             </div>
         </nav>
-
-        <div class="container">
-                <div class="d-flex justify-content-center h-100" >
                     
-                        <section class="faq faqq " style="margin:auto">
+                        <section class="faq faqq " >
                                 <div class="container">
                                         <span class="faq1">
                                                 <p>Frequently Asked Questions</p>
@@ -60,16 +76,29 @@
                                             <div class="panel panel-default ">
                                                <div class="panel-heading accordion-toggle question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0" aria-expanded="true">
                                                   <h4 class="panel-title">
-                                                     <a class="ing"><span>Q</span>:  How often can i use Circe? </a>
+                                                     <a class="ing"><span>Q</span>:  What is Circe? </a>
                                                   </h4>
                                                </div>
                                                <div id="question0" class="panel-collapse collapse in"  aria-expanded="true">
                                                   <div class="panel-body">
                                                      <h5><span class="label label-primary">Answer</span></h5>
-                                                     <p>One simple answer. As often as possible. </p>
+                                                     <p>Circe is an app that allows you calculate how much power needed to run your home. </p>
                                                   </div>
                                                </div>
                                             </div>
+                                            <div class="panel panel-default ">
+                                                    <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4" >
+                                                       <h4 class="panel-title">
+                                                          <a class="ing"><span>Q</span>:  How often can i use Circe? </a>
+                                                       </h4>
+                                                    </div>
+                                                    <div id="question4" class="panel-collapse collapse " >
+                                                       <div class="panel-body">
+                                                          <h5><span class="label label-primary">Answer</span></h5>
+                                                          <p>One simple answer. As often as possible. </p>
+                                                       </div>
+                                                    </div>
+                                                 </div>
                                             <div class="panel panel-default ">
                                                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
                                                   <h4 class="panel-title">
@@ -116,8 +145,6 @@
                                 </div>
                                </div>
                              </section>
-                </div>
-            </div>
 
             <footer class="footer" style="background-color: rgb(1, 27, 51)">
                     <div>

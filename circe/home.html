@@ -24,36 +24,57 @@
     <nav  class="navbar navbar-expand-lg fixed-top">
             <div style="background-color: transparent;" class="container">
                     <div class="navbar-header">
-                <a class="navbar-brand " style="color: rgb(254, 254, 255); font-size: 28px;" href="home.html">CIRCE</a>
+                <a class="navbar-brand logo" style="color: rgb(254, 254, 255); font-size: 28px;" href="home.html">CIRCE</a>
                     </div>
-                <ul class="nav navbar-nav" >
+                <!-- <ul class="nav navbar-nav" >
                         <li style="color: rgb(254, 254, 255) !important; font-size: 18px;"></li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
                         <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                      </ul>
+                      </ul> -->
                   </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span style="color: white" class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="about.html">ABOUT
+                              <span class="sr-only">(current)</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                          </li>
+                          <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a> -->
+                          </li>
+                        </ul>
+                      </div>
     
             </div>
         </nav>
-<div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
-                <div class="card-body">
-                    <div class="homhed">
-                            <p>Calculate your Solar Requirement</p>
-                    </div>
-                    <div class="homcont">
-                        <p>Circe is an app that allows you calculate how much power needed to run your home</p>
-                    </div>                     
+                <div class="col-xs-6 col-sm-6 col-md-6 ">
+                        <div class="card-body">
+                                <div class="homhed">
+                                        <p>Calculate your Solar Requirement</p>
+                                </div>
+                                <div class="homcont">
+                                    <p>Circe is an app that allows you calculate how much power needed to run your home</p>
+                                </div>
+                       <div class="calcnow">
+                            <a href="calc.html" style="text-decoration: none">Calculate Now</a>
+                       </div>                         
+                        <!-- <input type="" class="btn btn-lg btn-block" style="background-color: white; font-size: 30px;" value="Calculate Now"/> -->
+                        
+                </div>                
                 </div>
-                <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 calcnow">
-                            <a href="calc.html"><input type="" class="btn btn-lg btn-block" style="background-color: white; font-size: 30px;" value="Calculate Now"/></a>
-                        </div>
+                        
                 <!-- <div class="calcnow">
                       <button> <a href="calc.html"> Calculate Now </a> </button>
                 </div>  -->
@@ -96,10 +117,7 @@
 					<a href="#">Forgot your password?</a>
 				</div>
             </div> -->
-            
-		</div>
 	</div>
-</div>
 </div>
 <footer class="footer">
         <div >

@@ -28,34 +28,52 @@
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">ABOUT
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a> -->
+            </li>
+          </ul>
+        </div>
 
     </div>
   </nav>
   <!-- Jumbotron Header -->
-  <header class="jumb">
-    <h1 ><b>Solar Calculator App</b></h1>
-  </header>
+  <div class="sca">
+      <h1 ><b>Solar Calculator App</b></h1>
+  </div>
   <!-- /.container -->
   <section class="intro">
+      
     <row>
-
+        
       <div class="col-lg-6 col-sm-12 left">
         <div class="Hmspunpd">
           <p>
             How Much Solar Power Do you Need?
           </p>
         </div>
-        <br />
-        <div class="row">
+        <div >
           <span class="elec">
             <p>Electronic Type:</p>
             <div class="btn-group" style="border: 1px solid rgba(1, 27, 51, 0.801); background-color: whitesmoke">
               <button class="btn btn-sm" type="button">
-                Select Electronic
+                --Select--
               </button>
               <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
+                <span class="sr-only"></span>
               </button>
               <div class="dropdown-menu">
                 <option class="dropdown-item">Television</option>
@@ -76,7 +94,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div >
           <div class="elec1"><p> Consumption <i>(In Watts)</i>:</p>
             <input  size="9" type="text"></input>
           </div>
@@ -91,8 +109,54 @@
               <input  size="9" type="text"></input>
             </div>
 
+            <div class="elec8">
+                <p>Battery Voltage:</p>
+                <input  size="9" type="text"></input>
+              </div>
+
+            <span class="elec7">
+                <p>Hours Of Sunlight Per Day:</p>
+                <div class="btn-group" style="border: 1px solid rgba(1, 27, 51, 0.801); background-color: whitesmoke">
+                  <button class="btn btn-sm" type="button">
+                    
+                  </button>
+                  <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only"></span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <option class="dropdown-item">1</option>
+                    <option class="dropdown-item">2</option>
+                    <option class="dropdown-item">4</option>
+                    <option class="dropdown-item">5</option>
+                    <option class="dropdown-item">6</option>
+                    <option class="dropdown-item">7</option>
+                    <option class="dropdown-item">8</option>
+                    <option class="dropdown-item">9</option>
+                    <option class="dropdown-item">10</option>
+                    <option class="dropdown-item">11</option>
+                    <option class="dropdown-item">12</option>
+                    <option class="dropdown-item">13</option>
+                    <option class="dropdown-item">14</option>
+                    <option class="dropdown-item">15</option>
+                    <option class="dropdown-item">16</option>
+                    <option class="dropdown-item">17</option>
+                    <option class="dropdown-item">18</option>
+                    <option class="dropdown-item">19</option>
+                    <option class="dropdown-item">20</option>
+                    <option class="dropdown-item">21</option>
+                    <option class="dropdown-item">22</option>
+                    <option class="dropdown-item">23</option>
+                    <option class="dropdown-item">24</option>
+                    
+                  </div>
+                </div>
+              </span>
+
+
+
             <div class="elec6">
-                <a href="calc.html"><span>Calculate</span></a>
+                <a href="calc.html" style="text-decoration: none"><span>Calculate</span></a>
             </div>            
 
           <!-- <span class="elec2">Quantity:
