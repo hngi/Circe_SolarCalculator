@@ -8,7 +8,7 @@
 body{
     background: #E5E5E5;
     color: #011B33;
-    overflow: scroll;
+    overflow-y: scroll;
     transition: background-color .5s;
 }
 nav{
@@ -341,4 +341,388 @@ footer{
     font-family: Segoe UI;
     font-size: 18px;
     line-height: 24px;
+}
+@media only screen and (max-width: 1040px){
+    body{
+        text-align: center;
+        overflow-y:scroll;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        width: 40%;
+        transition: background-color .5s;
+        font-size: 16px;
+        text-justify: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    hr{
+        display: none;
+    }
+    #search{
+        left: 20px;
+    }
+    #rect {
+        width: 391px;
+        height: 335px;
+        left: 830px;
+        top: 150px;
+        color: #FFFFFF;
+        text-align: center;
+        background: #011B33;
+        box-shadow: 0px 4px 73px rgba(0, 0, 0, 0.25);
+        border-radius: 19px;
+        position: static;
+        margin-left: 300px;
+    }
+    .navigation {
+        width: 35%;
+    }
+    #topNav.navigation{
+        width: 120px;
+    }
+    .menulist {
+        width: 130px;
+    }
+    .menuitems {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Gilroy SemiBold';
+        font-weight: 300;
+        width:120px;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        margin-top: 0px;
+        opacity: 1;
+        right: 120px;
+    }
+    #form-content {
+        margin-top: 12%;
+        width: 30%;
+        margin-left: 300px;
+        left: 200px;
+        margin-left: 10px;
+        font-family: 'Gilroy-Medium';
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: -0.05em;
+        color: #000000;
+        margin-top: 20px;
+    }
+    #electQty {
+        margin-left: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+    #hoursPower {
+        margin-left: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+    #wattBatt {
+        margin-left: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+    h1 {
+        position: static;
+        text-align: center;
+        margin-left: 90px;
+        font-size: -webkit-xxx-large;
+        margin-top: 50px;
+    }
+    h3{
+        position: static;
+        text-align: center;
+        margin-left: 300px;
+        left: 20%;
+        width: 370px;
+        font-size: 26px;
+        text-align-last: center;
+        margin-top: 50px;
+    }
+    #but {
+        position: static;
+        margin-left: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #text-valu2e {
+        margin-top: px;
+        padding-top: 40px;
+    }
+    #add {
+        position: static;
+        text-align: center;
+        margin-left: 100px;
+        /* height: 80px; */
+        /* left: 100px; */
+        /* margin: 40px; */
+        border: none;
+        background: transparent;
+        color: #000000;
+        font-family: 'Gilroy ExtraBold';
+    }
+    #now{
+        display: none;
+    }
+    #calc{
+        text-align: center;
+        width: 80px;
+    }
+    footer{
+        left: 30%;
+        text-align: center;
+        margin-top: 10px;
+        position: fixed;
+    }
+    #page{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+@media only screen and (max-width: 860px){
+    body{
+        
+        text-align: center;
+        overflow-y:scroll;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        width: 40%;
+        transition: background-color .5s;
+        font-size: 16px;
+        text-justify: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .navigation {
+        width: 35%;
+    }
+    #topNav.navigation{
+        width: 120px;
+    }
+    .menulist {
+        width: 130px;
+    }
+    .menuitems {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Gilroy SemiBold';
+        font-weight: 300;
+        width: 120px;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        margin-top: 0px;
+        opacity: 1;
+        right: 120px;
+    }
+    hr{
+        display: none;
+    }
+    #calc{
+        text-align: center;
+        left: 30%;
+        width: 80px;
+    }
+    footer{
+        left: 30%;
+        text-align: center;
+        margin-top: 50px;
+        position: fixed;
+    }
+    #page{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+@media only screen and (max-width: 680px){
+    body{
+        text-align: left;
+        overflow:hidden;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        width: 40%;
+        transition: background-color .5s;
+        font-size: 16px;
+        text-justify: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .navigation {
+        width: 35%;
+    }
+    #topNav.navigation{
+        width: 120px;
+    }
+    .menulist {
+        width: 130px;
+    }
+    .menuitems {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Gilroy SemiBold';
+        font-weight: 300;
+        width: 120px;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        margin-top: 0px;
+        opacity: 1;
+        right: 120px;
+    }
+    hr{
+        display: none;
+    }
+    h1{
+        position: static;
+        text-align: left;
+        margin-left: 10%;
+        left: 18%;
+        font-size: -webkit-xxx-large;
+        margin-top: 50px;
+    }
+    h3{
+        position: absolute;
+        text-align: left;
+        margin: 0 auto;
+        left: 18%;
+        width: 370px;
+        font-size: 26px;
+        text-align-last: center;
+        margin-top: 50px;
+    }
+    #but{
+        position: absolute;
+        left: 10%;
+        width: 90vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #now{
+        display: none;
+    }
+    #calc{
+        text-align: center;
+        left: 10%;
+        width: 80px;
+    }
+    footer{
+        left: 5%;
+        margin-top: 50px;
+    }
+    #page{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+@media only screen and (max-width: 380px){
+    body{
+        text-align: left;
+        overflow:hidden;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        width: 40%;
+        transition: background-color .5s;
+        font-size: 16px;
+        text-justify: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .menuitems {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Gilroy SemiBold';
+        font-weight: 300;
+        width: 120px;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        margin-top: 0px;
+        opacity: 1;
+        right: 120px;
+    }
+    hr{
+        display: none;
+    }
+    #form-content {
+        margin-top: 12%;
+        width: 30%;
+        top: 300px;
+        margin-left: 10px;
+        font-family: 'Gilroy-Medium';
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: -0.05em;
+        color: #000000;
+    }
+    h1{
+        position: static;
+        text-align: left;
+        margin-left: 2%;
+        left: 8%;
+        font-size: -webkit-xxx-large;
+        margin-top: 50px;
+    }
+    h3{
+        position: absolute;
+        text-align: left;
+        margin: 0 auto;
+        left: 8%;
+        width: 370px;
+        font-size: 26px;
+        text-align-last: center;
+        margin-top: 50px;
+    }
+    #but{
+        position: absolute;
+        left: 10%;
+        width: 90vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #now{
+        display: none;
+    }
+    #calc{
+        text-align: center;
+        left: 10%;
+        width: 80px;
+    }
+    footer{
+        left: 5%;
+        margin-top: 50px;
+    }
+    #page{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-flow: wrap;
+    }
 }
