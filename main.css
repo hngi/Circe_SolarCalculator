@@ -133,3 +133,9 @@ h3 {
     margin: 20px 5px;
     padding: 10px;
 }
+
+@media screen and (min-width: 768px){
+    div.alert{
+        display: none;
+    }
+}
