@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let node = document.createElement('li');
         let button = document.createElement('button');
         let textnode =
-            document.createTextNode(`<span>${lastObj.appliance}</span>: ${lastObj.energy} `);
+            document.createTextNode(`${lastObj.appliance}: ${lastObj.energy} `);
 
         //node.setAttribute('id', id);
         button.innerHTML = '&times;';
