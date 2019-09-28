@@ -51,17 +51,28 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gilroy-Regular', sans-serif;
 }
 
 #logo {
     margin: 20px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Ginger Peachy NF', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #011B33;
 }
 
 h1,
 h3 {
     font-weight: 900;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
 }
 
 .alert {
@@ -135,6 +146,11 @@ h3 {
 }
 
 @media screen and (min-width: 768px){
+
+    #logo {
+        text-align: left;
+    }
+
     div.alert{
         display: none;
     }
