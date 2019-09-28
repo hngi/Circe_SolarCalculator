@@ -342,6 +342,460 @@ footer{
     font-size: 18px;
     line-height: 24px;
 }
+
+@media only screen and (max-width: 1024px) {
+    body{
+        text-align: center;
+        overflow-y:scroll;
+        overflow-x: hidden;
+        transition: background-color .5s;
+        width: 90%;
+        position: relative;
+    }
+    #search {
+        position: absolute;
+        width: 680px;
+        height: 48px;
+        left: 180px;
+    }
+    h1 {
+        position: absolute;
+        width: 330px;
+        height: 40px;
+        left: 330px;
+        top: 40px;
+        padding: 8px;
+        margin-top: 20px;
+        font-size: 40px;
+        line-height: 30px;
+    }
+    nav {
+        height: 80px;
+        top: 15px;
+    }
+    h3{
+        position: absolute;
+        width: 360px;
+        height: 40px;
+        left: 330px;
+        top: 148px;
+        font-family: 'Gilroy-Medium';
+        font-size: 20px;
+        line-height: 29px;
+    }
+    #electQty {
+        display: flex;
+        flex-direction: row;
+        margin-left: 280px;
+        margin-top: 190px;
+    }
+    #hoursPower {
+        display: flex;
+        flex-direction: row;
+        margin-left: 280px;
+    }
+    #wattBatt {
+        display: flex;
+        flex-direction: row;
+        margin-left: 280px;
+        margin-left: 280px;
+    }
+    #watt{
+        display: none;
+    }
+    #rect {
+        position: static;
+        margin-left: 330px;
+    }#text-value{
+        padding: 30px;
+    }
+    #but {
+        position: static;
+        width: 303px;
+        height: 80px;
+        margin-left: 50px;
+        margin-right: 0px;
+        /* top: 1000px; */
+        margin-top: 80px;
+        background:  #011B33;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #FFF;
+    }
+    #add {
+        position: static;
+        width: 180px;
+        height: 80px;
+    }
+
+    #calc {
+        position: absolute;
+        left: 420px;
+        /* width: 404px; */
+        height: 76px;
+        font-size: 36px;
+        line-height: 5px;
+        color: #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Gilroy ExtraBold';
+    }
+    footer{
+        position: static;
+        margin-left: 310px;
+        margin-top: 100px;
+    }
+    #master{
+        overflow-x: hidden;
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+
+}
+@media only screen and (max-width: 964px) {
+    #but {
+        position: static;
+        width: 303px;
+        height: 80px;
+        margin-left: 80px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background:  #011B33;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #FFF;
+    }
+
+}
+@media only screen and (max-width: 907px) {
+    #but {
+        position: static;
+        width: 303px;
+        height: 80px;
+        margin-left: 140px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background:  #011B33;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #FFF;
+    }
+
+}
+@media only screen and (max-width: 780px) {
+    h1{
+        left: 225px;
+    }
+    h3{
+        left: 225px;
+    }
+    #electQty {
+        display: flex;
+        flex-direction: row;
+        margin-left: 200px;
+        margin-top: 190px;
+    }
+    #search {
+        position: absolute;
+        width: 480px;
+        height: 48px;
+        left: 145px;
+        top: 160px;
+    }
+    #hoursPower {
+        display: flex;
+        flex-direction: row;
+        margin-left: 200px;
+    }
+    #wattBatt {
+        display: flex;
+        flex-direction: row;
+        margin-left: 200px;
+    }
+    #watt{
+        display: none;
+    }
+    #rect {
+        position: static;
+        margin-left: 230px;
+    }#text-value{
+        padding: 30px;
+    }
+    #but {
+        position: static;
+        width: 303px;
+        height: 80px;
+        margin-left: 70px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background:  #011B33;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #FFF;
+    }
+    #calc{
+        left: 305px;
+    }
+    footer{
+        margin-left: 240px;
+    }
+
+}
+@media only screen and (max-width: 430px) {
+    h1{
+        left: 35px;
+        font-size: 28px;
+    }
+    h3{
+        left: 15px;
+        width: 380px;
+    }
+    #ht-blue{
+        padding: 130px;
+    }
+    #search {
+        position: absolute;
+        width: 260px;
+        height: 48px;
+        left: 85px;
+        top: 140px;
+        font-size: 20px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    #electQty {
+        display: flex;
+        flex-direction: row;
+        margin-left: -20px;
+        margin-top: 190px;
+    }
+    #hoursPower {
+        display: flex;
+        flex-direction: row;
+        margin-left: -20px;
+    }
+    #wattBatt {
+        display: flex;
+        flex-direction: row;
+        margin-left: -20px;
+    }
+    #watt{
+        display: none;
+    }
+    #rect {
+        position: static;
+        margin-left: 15px;
+        
+    }
+    #text-value{
+        padding: 30px;
+    }
+    #but {
+        position: static;
+        width: 303px;
+        height: 50px;
+        margin-left: 10px;
+        /* top: 1000px; */
+        margin-top: 180px;
+        background:  #011B33;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #FFF;
+    }
+    nav{
+        left: 45px;
+    }
+    #calc{
+        left: 110px;
+    }
+    footer{
+        margin-left: 20px;
+    }
+    .navigation{
+        width: 40%;
+        position: static;
+    }
+   
+
+}
+@media only screen and (max-width: 380px) {
+    h1{
+        left: 15px;
+        font-size: 28px;
+    }
+    h3{
+        left: 15px;
+        width: 330px;
+    }
+    #ht-blue{
+        padding: 100px;
+    }
+    #search {
+        position: absolute;
+        width: 240px;
+        height: 48px;
+        left: 65px;
+        top: 140px;
+        font-size: 20px;
+    }
+    #electQty {
+        display: flex;
+        flex-direction: row;
+        margin-left: -50px;
+        margin-top: 190px;
+    }
+    #hoursPower {
+        display: flex;
+        flex-direction: row;
+        margin-left: -50px;
+    }
+    #wattBatt {
+        display: flex;
+        flex-direction: row;
+        margin-left: -50px;
+    }
+    #watt{
+        display: none;
+    }
+    #rect {
+        position: static;
+        margin-left: 12.5px;
+        width: 350px;
+    }#text-value{
+        padding: 30px;
+    }
+    #but {
+        position: static;
+        width: 303px;
+        height: 50px;
+        margin-left: 10px;
+        /* top: 1000px; */
+        margin-top: 130px;
+        background:  #011B33;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #FFF;
+    }
+    nav{
+        left: 45px;
+    }
+    footer{
+        margin-left: 12px;
+    }
+    .navigation{
+        width: 40%;
+        position: static;
+    }
+   
+
+}
+@media only screen and (max-width: 320px) {
+    h1{
+        left: -15px;
+        font-size: 22px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+    h3{
+        left: 15px;
+        width: 280px;
+    }
+    #search{
+        margin-left: 15px;
+    }
+    #search {
+        position: absolute;
+        width: 220px;
+        height: 48px;
+        left: 40px;
+        top: 140px;
+        font-size: 18px;
+    }
+    #electQty {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 190px;
+    }
+    #electQty label{
+        margin-left: 40px;
+        text-align: justify;
+    }
+    #hoursPower {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    #hoursPower label{
+        margin-left: 40px;
+        text-align: justify;
+    }
+    #wattBatt {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    #wattBatt label{
+        margin-left: 40px;
+        text-align: justify;
+    }
+    #watt{
+        display: none;
+    }
+    #rect {
+        position: static;
+        margin-left: 20px;
+        width: 280px;
+    }
+    #value{
+        width: 260px;
+        margin-left: 12.5px;
+        align-self: center;
+    }
+    #but {
+        position: static;
+        width: 203px;
+        height: 50px;
+        margin-left: 10px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background:  #011B33;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #FFF;
+    }
+    nav{
+        left: -1px;
+    }
+    #calc{
+        margin-left: -10px;
+        margin-right: 10px;
+        font-size: 28px;
+    }
+    footer{
+        margin-left: 0px;
+        font-size: 16px
+    }
+    .navigation{
+        width: 20%;
+        position: static;
+    }
+    #now{
+        display: none;
+    }
+   
+
+}
 @media only screen and (max-width: 1040px){
     body{
         text-align: center;
