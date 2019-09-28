@@ -9,8 +9,12 @@ body{
     background: #011B33;
     color: #FFFFFF;
     text-align: center;
-    overflow:hidden;
+
+    overflow-y:scroll;
+    overflow-x: hidden;
+
     transition: background-color .5s;
+    max-width: 90%;
 }
 nav{
     position: absolute;
@@ -18,7 +22,6 @@ nav{
     height: 120px;
     left: 0px;
     top: 31px;
-
     font-family: 'Ginger Peachy NF';
     font-size: 28px;
     line-height: 38px;
@@ -143,10 +146,10 @@ nav{
     font-size:30px;
 }
 h1{
-    position: absolute;
+    position: relative;
     width: 799px;
     height: 74px;
-    left: 300px;
+    left: 250px;
     top: 50px;
     text-align: center;
     font-family: 'Gilroy ExtraBold';
@@ -157,7 +160,7 @@ h3{
     position: absolute;
     width: 842px;
     height: 116px;
-    left: 280px;
+    left: 240px;
     top: 238px;
 
     font-family: 'Gilroy-Medium';
@@ -167,8 +170,8 @@ h3{
 #but{
     position: absolute;
     width: 447px;
-    height: 86px;
-    left: 457px;
+    height: 80px;
+    left: 417px;
     top: 400px;
     background: #F9FCFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -176,6 +179,9 @@ h3{
     font-family: 'Gilroy ExtraBold';
     color: #000000;
     
+}
+#now{
+    display: none;
 }
 a{
     text-decoration: none;
@@ -196,9 +202,630 @@ footer{
     position: absolute;
     width: 336px;
     height: 28px;
-    left: 502px;
+    left: 472px;
     top: 546px;
     font-family: Segoe UI;
     font-size: 18px;
     line-height: 24px;
 }
+#page{
+    position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body{
+        background: #011B33;
+        color: #FFFFFF;
+        text-align: center;
+        overflow-y:scroll;
+        transition: background-color .5s;
+        position: relative;
+        max-width: 1024px;
+    }
+    h1 {
+        position: absolute;
+        width: 330px;
+        height: 40px;
+        left: 330px;
+        top: 40px;
+        padding: 8px;
+        margin-top: 20px;
+        font-size: 40px;
+        line-height: 30px;
+    }
+    nav {
+        height: 80px;
+        top: 15px;
+    }
+    h3{
+        position: absolute;
+        width: 360px;
+        height: 40px;
+        left: 330px;
+        top: 178px;
+        font-family: 'Gilroy-Medium';
+        font-size: 20px;
+        line-height: 29px;
+    }
+    #but {
+        position: static;
+        width: 303px;
+        height: 80px;
+        margin-right: 0px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background: #F9FCFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #000000;
+    }
+
+    #calc {
+        position: absolute;
+        left: 300px;
+        /* width: 404px; */
+        height: 76px;
+        font-size: 36px;
+        line-height: 5px;
+        color: #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Gilroy ExtraBold';
+    }
+    footer{
+        position: static;
+        margin-left: 310px;
+        margin-top: 100px;
+    }
+    #page{
+        overflow-x: hidden;
+    }
+
+}
+@media only screen and (max-width: 964px) {
+    #but {
+        position: static;
+        width: 303px;
+        height: 80px;
+        margin-left: 80px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background: #F9FCFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #000000;
+    }
+
+}
+@media only screen and (max-width: 907px) {
+    #but {
+        position: static;
+        width: 303px;
+        height: 80px;
+        margin-left: 140px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background: #F9FCFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #000000;
+    }
+
+}
+@media only screen and (max-width: 780px) {
+    h1{
+        left: 225px;
+    }
+    h3{
+        left: 225px;
+    }
+    #but {
+        position: static;
+        width: 303px;
+        height: 80px;
+        margin-left: 70px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background: #F9FCFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #000000;
+    }
+    #calc{
+        left: 205px;
+    }
+    footer{
+        margin-left: 240px;
+    }
+
+}
+@media only screen and (max-width: 430px) {
+    h1{
+        left: 35px;
+        font-size: 28px;
+    }
+    h3{
+        left: 15px;
+        width: 380px;
+    }
+    #but {
+        position: static;
+        width: 303px;
+        height: 50px;
+        margin-left: 10px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background: #F9FCFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #000000;
+    }
+    nav{
+        left: 45px;
+    }
+    #calc{
+        left: 0px;
+    }
+    footer{
+        margin-left: 20px;
+    }
+    .navigation{
+        width: 40%;
+        position: static;
+    }
+   
+
+}
+@media only screen and (max-width: 380px) {
+    h1{
+        left: 15px;
+        font-size: 28px;
+    }
+    h3{
+        left: 15px;
+        width: 330px;
+    }
+    #but {
+        position: static;
+        width: 303px;
+        height: 50px;
+        margin-left: 10px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background: #F9FCFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #000000;
+    }
+    nav{
+        left: 45px;
+    }
+    footer{
+        margin-left: 12px;
+    }
+    .navigation{
+        width: 40%;
+        position: static;
+    }
+   
+
+}
+@media only screen and (max-width: 320px) {
+    h1{
+        left: -15px;
+        font-size: 22px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+    h3{
+        left: 15px;
+        width: 280px;
+    }
+    #but {
+        position: static;
+        width: 203px;
+        height: 50px;
+        margin-left: 10px;
+        /* top: 1000px; */
+        margin-top: 280px;
+        background: #F9FCFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        font-family: 'Gilroy ExtraBold';
+        color: #000000;
+    }
+    nav{
+        left: -1px;
+    }
+    #calc{
+        margin-left: -40px;
+        margin-right: 10px;
+        font-size: 28px;
+    }
+    footer{
+        margin-left: 20px;
+    }
+    .navigation{
+        width: 20%;
+        position: static;
+    }
+    #now{
+        display: none;
+    }
+   
+
+}
+        overflow:hidden;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        width: 40%;
+        transition: background-color .5s;
+        font-size: 16px;
+        text-justify: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .navigation {
+        width: 35%;
+    }
+    #topNav.navigation{
+        width: 120px;
+    }
+    .menulist {
+        width: 130px;
+    }
+    .menuitems {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Gilroy SemiBold';
+        font-weight: 300;
+        width: 120px;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        margin-top: 0px;
+        opacity: 1;
+        right: 120px;
+    }
+    #form-content {
+        margin-top: 12%;
+        width: 30%;
+        top: 300px;
+        left: 20px;
+        margin-left: 10px;
+        font-family: 'Gilroy-Medium';
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: -0.05em;
+        color: #000000;
+        margin-top: 20px;
+    }
+    h1{
+        position: static;
+        text-align: center;
+        margin-left: 330px;
+        left: 20%;
+        font-size: -webkit-xxx-large;
+        margin-top: 50px;
+    }
+    h3{
+        position: absolute;
+        text-align: center;
+        margin-left: 300px;
+        left: 20%;
+        width: 370px;
+        font-size: 26px;
+        text-align-last: center;
+        margin-top: 50px;
+    }
+    #but{
+        position: absolute;
+        left: 260px;
+        width: 50vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #now{
+        display: none;
+    }
+    #calc{
+        text-align: center;
+        left: 30%;
+        width: 80px;
+    }
+    footer{
+        left: 30%;
+        text-align: center;
+        margin-top: 50px;
+        position: fixed;
+    }
+    #page{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+@media only screen and (max-width: 860px){
+    body{
+        background: #011B33;
+        color: #FFFFFF;
+        text-align: center;
+        overflow:hidden;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        width: 40%;
+        transition: background-color .5s;
+        font-size: 16px;
+        text-justify: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .navigation {
+        width: 35%;
+    }
+    #topNav.navigation{
+        width: 120px;
+    }
+    .menulist {
+        width: 130px;
+    }
+    .menuitems {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Gilroy SemiBold';
+        font-weight: 300;
+        width: 120px;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        margin-top: 0px;
+        opacity: 1;
+        right: 120px;
+    }
+    h1{
+        position: static;
+        text-align: center;
+        margin-left: 180px;
+        left: 20%;
+        font-size: -webkit-xxx-large;
+        margin-top: 50px;
+    }
+    h3{
+        position: absolute;
+        text-align: center;
+        margin-left: 155px;
+        left: 20%;
+        width: 370px;
+        font-size: 26px;
+        text-align-last: center;
+        margin-top: 50px;
+    }
+    #but{
+        position: absolute;
+        left: 10%;
+        width: 90vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #now{
+        display: none;
+    }
+    #calc{
+        text-align: center;
+        left: 30%;
+        width: 80px;
+    }
+    footer{
+        left: 30%;
+        text-align: center;
+        margin-top: 50px;
+        position: fixed;
+    }
+    #page{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+@media only screen and (max-width: 680px){
+    body{
+        background: #011B33;
+        color: #FFFFFF;
+        text-align: left;
+        overflow:hidden;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        width: 40%;
+        transition: background-color .5s;
+        font-size: 16px;
+        text-justify: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .navigation {
+        width: 35%;
+    }
+    #topNav.navigation{
+        width: 120px;
+    }
+    .menulist {
+        width: 130px;
+    }
+    .menuitems {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Gilroy SemiBold';
+        font-weight: 300;
+        width: 120px;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        margin-top: 0px;
+        opacity: 1;
+        right: 120px;
+    }
+    h1{
+        position: static;
+        text-align: left;
+        margin-left: 2%;
+        left: 8%;
+        font-size: -webkit-xxx-large;
+        margin-top: 50px;
+    }
+    h3{
+        position: absolute;
+        text-align: left;
+        margin: 0 auto;
+        left: 8%;
+        width: 370px;
+        font-size: 26px;
+        text-align-last: center;
+        margin-top: 50px;
+    }
+    #but{
+        position: absolute;
+        left: 10%;
+        width: 90vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #now{
+        display: none;
+    }
+    #calc{
+        text-align: center;
+        left: 10%;
+        width: 80px;
+    }
+    footer{
+        left: 5%;
+        margin-top: 50px;
+    }
+    #page{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+@media only screen and (max-width: 380px){
+    body{
+        background: #011B33;
+        color: #FFFFFF;
+        text-align: left;
+        overflow:hidden;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        width: 40%;
+        transition: background-color .5s;
+        font-size: 16px;
+        text-justify: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .navigation {
+        width: 35%;
+    }
+    #topNav.navigation{
+        width: 120px;
+    }
+    .menulist {
+        width: 130px;
+    }
+    .menuitems {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Gilroy SemiBold';
+        font-weight: 300;
+        width: 120px;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        color: #fff;
+        transition: all .5s ease-in-out;
+        margin-top: 0px;
+        opacity: 1;
+        right: 120px;
+    }
+    #form-content {
+        margin-top: 12%;
+        width: 30%;
+        top: 300px;
+        margin-left: 10px;
+        font-family: 'Gilroy-Medium';
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: -0.05em;
+        color: #000000;
+    }
+    h1{
+        position: static;
+        text-align: left;
+        margin-left: 2%;
+        left: 8%;
+        font-size: -webkit-xxx-large;
+        margin-top: 50px;
+    }
+    h3{
+        position: absolute;
+        text-align: left;
+        margin: 0 auto;
+        left: 8%;
+        width: 370px;
+        font-size: 26px;
+        text-align-last: center;
+        margin-top: 50px;
+    }
+    #but{
+        position: absolute;
+        left: 10%;
+        width: 90vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #now{
+        display: none;
+    }
+    #calc{
+        text-align: center;
+        left: 10%;
+        width: 80px;
+    }
+    footer{
+        left: 5%;
+        margin-top: 50px;
+    }
+    #page{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+
