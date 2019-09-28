@@ -113,13 +113,13 @@ h3 {
 }
 
 .circe-display {
-    margin: 20px;
+    margin: 40px 20px;
     background-color:#011B33;
     color: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 7px 7px #999;
-    padding: 20px 5px;
+    padding: 30px 5px;
 }
 
 .watts-display {
