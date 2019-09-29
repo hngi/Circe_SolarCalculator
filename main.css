@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Fonts used on Figma design */
+
+@font-face {
+    font-family: 'Ginger Peachy NF';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/GINGP___.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Gilroy-Bold.woff') format('woff');
+}
+    
+    
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Gilroy-Heavy.woff') format('woff');
+}
+    
+    
+@font-face {
+    font-family: 'Gilroy-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Gilroy-Light.woff') format('woff');
+}
+    
+    
+@font-face {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Gilroy-Medium.woff') format('woff');
+}
+    
+    
+@font-face {
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Gilroy-Regular.woff') format('woff');
+}
+
+body {
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+#logo {
+    margin: 20px;
+    font-family: 'Ginger Peachy NF', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #011B33;
+}
+
+h1,
+h3 {
+    font-weight: 900;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #192438;
+    color: white;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+
+#add {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: #666;
+    color: white;
+}
+.remove {
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color:rgb(15, 15, 59);
+    color: white;
+}
+
+#calculate {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(14, 14, 36);
+    color: white;
+}
+
+.circe-display {
+    margin: 40px 20px;
+    background-color:#011B33;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px #999;
+    padding: 30px 5px;
+}
+
+.watts-display {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+#display {
+    margin: 20px 5px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px){
+
+    #logo {
+        text-align: left;
+    }
+
+    div.alert{
+        display: none;
+    }
+}
