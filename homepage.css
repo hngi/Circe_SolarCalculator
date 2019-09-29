@@ -1,0 +1,43 @@
+body{
+    background: #011B33;
+    color: #FFFFFF;
+    margin: 50px;
+    align-items: center;
+}
+.navbar-brand{
+font-family: Ginger Peachy NF;
+font-size: 28px;
+line-height: 38px;
+text-align: center;
+color: #FFFFFF;
+}
+.wrap{
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 150px;
+}
+.wrap p{
+    font-family: Gilroy-Medium;
+    font-size: 33px;
+    line-height: 39px;
+}
+.wrap h1{
+    font-family: Gilroy-ExtraBold;
+    font-size: 50px;
+    line-height: 59px;
+}
+input{
+    background: #F9FCFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 447px;
+    height: 86px;
+    left: 497px;
+    top: 582px;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.wrap .copyright{
+    margin-top: 140px;
+}
