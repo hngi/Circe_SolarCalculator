@@ -19,25 +19,25 @@
 	<meta name="description" content="FAQ page for Circe Solar Calculator">
 	<link href='./main.css' rel='stylesheet' type="text/css">
 	<style>
-		main{
+		body#faq-page main{
 			min-height: calc(100vh - 200px);
 		}
 
-		h1{
+		body#faq-page h1{
 			font-size: 45px;
 		}
 
-		.accordion-item-text-container {
+		body#faq-page .accordion-item-text-container {
 			display: none;
 			padding: 1rem 3rem;
 			margin: 0;
 		}
 
-		.accordion-item-text-container, button.accordion-item-title {
+		body#faq-page .accordion-item-text-container, button.accordion-item-title {
 			padding: 1.5rem;
 		}
 
-		.accordion-item-text-container p{
+		body#faq-page .accordion-item-text-container p{
 			font-family: "Gilroy-Medium", san-serif;
 			font-style: normal;
 			font-weight: normal;
@@ -47,7 +47,7 @@
 			padding: 0;
 		}
 
-		div.accordion-item {
+		body#faq-page div.accordion-item {
 			width: 100%;
 			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 			padding: 0;
@@ -56,7 +56,7 @@
 			border-radius: .4rem .4rem 0 0;
 		}
 
-		button.accordion-item-title {
+		body#faq-page button.accordion-item-title {
 			background-color: #011B33;
 			border-radius: .4rem .4rem 0 0;
 			/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -72,7 +72,7 @@
 			line-height: 34px;
 		}
 
-		div#faq-container {
+		body#faq-page div#faq-container {
 			width: 90%;
 			max-width: 941px;
 			margin: auto;
@@ -80,11 +80,11 @@
 			flex-wrap: wrap;
 		}
 		
-		footer{
+		body#faq-page footer{
 			margin-top: 2rem;
 		}
 
-		footer p {
+		body#faq-page footer p {
 			font-family: "Segoe UI", san-serif;
 			font-style: normal;
 			font-weight: 600;
@@ -98,18 +98,18 @@
 		}
 
 		@media screen and (min-width: 850px){
-			body{
+			body#faq-page {
 				padding: 20px 100px;
 			}
 
-			.accordion-item-text-container, button.accordion-item-title {
+			body#faq-page .accordion-item-text-container, button.accordion-item-title {
 				padding: 1.5rem 3rem;
 			}
 		}
 	</style>
 </head>
 
-<body>
+<body id="faq-page">
 	<main>
 		<h1 id="logo">CIRCE</h1>
 		<div class="text-center">
