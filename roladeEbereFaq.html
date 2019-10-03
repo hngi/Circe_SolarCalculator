@@ -18,14 +18,102 @@
 	<title>Circe Solar Calculator</title>
 	<meta name="description" content="FAQ page for Circe Solar Calculator">
 	<link href='./main.css' rel='stylesheet' type="text/css">
+	<style>
+		main{
+			min-height: calc(100vh - 200px);
+		}
+
+		h1{
+			font-size: 45px;
+		}
+
+		.accordion-item-text-container {
+			display: none;
+			padding: 1rem 3rem;
+			margin: 0;
+		}
+
+		.accordion-item-text-container, button.accordion-item-title {
+			padding: 1.5rem;
+		}
+
+		.accordion-item-text-container p{
+			font-family: "Gilroy-Medium", san-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 29px;
+			margin: 0;
+			padding: 0;
+		}
+
+		div.accordion-item {
+			width: 100%;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			padding: 0;
+			margin: 0.5rem auto;
+			padding: 0;
+			border-radius: .4rem .4rem 0 0;
+		}
+
+		button.accordion-item-title {
+			background-color: #011B33;
+			border-radius: .4rem .4rem 0 0;
+			/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+			margin:0;
+			color: #fff;
+			width: 100%;
+			text-align: left;
+			min-height: 54px;
+			font-family: "Gilroy-Medium", san-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 28px;
+			line-height: 34px;
+		}
+
+		div#faq-container {
+			width: 90%;
+			max-width: 941px;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		footer{
+			margin-top: 2rem;
+		}
+
+		footer p {
+			font-family: "Segoe UI", san-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 24px;
+
+			color: #000000;
+			width: 100%;
+			padding: 1rem;
+			text-align: center;
+		}
+
+		@media screen and (min-width: 850px){
+			body{
+				padding: 20px 100px;
+			}
+
+			.accordion-item-text-container, button.accordion-item-title {
+				padding: 1.5rem 3rem;
+			}
+		}
+	</style>
 </head>
 
 <body>
 	<main>
 		<h1 id="logo">CIRCE</h1>
 		<div class="text-center">
-			<h1>Solar Calculator App</h1>
-			<h2>FAQ</h2>
+			<h1>Frequently Asked Questions</h1>
 		</div>
 		<div id="faq-container" class="container-fluid"></div>
 	</main>
