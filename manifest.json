@@ -10,11 +10,5 @@
     "description" : "A Solar Energy Calculator.",
     "orientation" : "any",
     "background_color" : "#fff",
-    "generated" : "true",
-    "icons" : [
-        {
-            "src": "https://viaphonenig.com/images/logo.png",
-            "sizes": "100x100"
-        }
-    ]
+    "generated" : "true"
 }
