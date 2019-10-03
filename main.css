@@ -3,7 +3,13 @@
 }
 
 /*Fonts used on Figma design */
+#mainNav{
+    background: #011B33;
+    font-family: 'Gilroy-Regular';
+    padding-left: 30px;
 
+  
+}
 @font-face {
     font-family: 'Ginger Peachy NF';
     font-style: normal;
@@ -52,16 +58,16 @@
 
 body {
     font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 20px;
 }
 
-#logo {
-    margin: 20px;
+
+.logo{
     font-family: 'Ginger Peachy NF', sans-serif;
-    font-weight: normal;
     font-size: 28px;
-    line-height: 38px;
-    text-align: center;
-    color: #011B33;
+    color: #192438;
+
+
 }
 
 h1,
@@ -115,7 +121,7 @@ h1{
     color: white;
 }
 
-#calculate {
+#calculate-btn {
     font-size: 20px;
     padding: 10px;
     border: none;
@@ -123,6 +129,7 @@ h1{
     background-color:rgb(14, 14, 36);
     color: white;
 }
+
 
 .circe-display {
     margin: 40px 20px;
