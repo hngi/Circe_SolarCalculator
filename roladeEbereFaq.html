@@ -97,6 +97,31 @@
 			text-align: center;
 		}
 
+		button.accordion-item-title {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		span.btn-text {
+			width: calc(100% - 40px);
+			max-width: calc(100% - 40px);
+		}
+
+		button span.btn-icon {
+			float: right;
+			margin: auto 5px;
+			background: white;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			border-radius: 50%;
+			color: #011B33;
+			font-family: "Gilroy", sans-serif;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 26px;
+		}
+
 		@media screen and (min-width: 850px){
 			body#faq-page {
 				padding: 20px 100px;
@@ -148,15 +173,23 @@
 			const divAccText = document.createElement("div");
 			const button = document.createElement("button");
 			const p = document.createElement("p");
+			const spanText = document.createElement("span");
+			const spanIcon = document.createElement("span");
 
 			//Adding classes
 			div.classList.add('accordion-item');
 			button.classList.add('accordion-item-title');
 			p.classList.add('accordion-item-text');
 			divAccText.classList.add('accordion-item-text-container');
+			spanIcon.classList.add('btn-icon');
+			spanText.classList.add('btn-text');
 
-			button.innerHTML = faq.title;
+			spanText.innerHTML = faq.title;
+			spanIcon.innerHTML = "+";
 			p.innerHTML = faq.text;
+
+			button.append(spanText);
+			button.append(spanIcon);
 
 			divAccText.append(p);
 
@@ -176,6 +209,11 @@
 			// console.log($(this));
 			
 			$(this).next().toggle("slow");
+			if($(this).children(".btn-icon").text() == "+"){
+				$(this).children(".btn-icon").html("-");
+			}else{
+				$(this).children(".btn-icon").html("+");
+			}
 		})
 	}
 
