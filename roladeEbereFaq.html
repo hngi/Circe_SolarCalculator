@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	 <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+	<title>Circe Solar Calculator</title>
+	<meta name="description" content="FAQ page for Circe Solar Calculator">
+	<link href='./main.css' rel='stylesheet' type="text/css">
+	<style>
+		body#faq-page main{
+			min-height: calc(100vh - 200px);
+		}
+
+		body#faq-page h1{
+			font-size: 45px;
+		}
+
+		body#faq-page .accordion-item-text-container {
+			display: none;
+			padding: 1rem 3rem;
+			margin: 0;
+		}
+
+		body#faq-page .accordion-item-text-container, button.accordion-item-title {
+			padding: 1.5rem;
+		}
+
+		body#faq-page .accordion-item-text-container p{
+			font-family: "Gilroy-Medium", san-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 29px;
+			margin: 0;
+			padding: 0;
+		}
+
+		body#faq-page div.accordion-item {
+			width: 100%;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			padding: 0;
+			margin: 0.5rem auto;
+			padding: 0;
+			border-radius: .4rem .4rem 0 0;
+		}
+
+		body#faq-page button.accordion-item-title {
+			background-color: #011B33;
+			border-radius: .4rem .4rem 0 0;
+			/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+			margin:0;
+			color: #fff;
+			width: 100%;
+			text-align: left;
+			min-height: 54px;
+			font-family: "Gilroy-Medium", san-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 28px;
+			line-height: 34px;
+		}
+
+		body#faq-page div#faq-container {
+			width: 90%;
+			max-width: 941px;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		body#faq-page footer{
+			margin-top: 2rem;
+		}
+
+		body#faq-page footer p {
+			font-family: "Segoe UI", san-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 24px;
+
+			color: #000000;
+			width: 100%;
+			padding: 1rem;
+			text-align: center;
+		}
+
+		button.accordion-item-title {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		span.btn-text {
+			width: calc(100% - 40px);
+			max-width: calc(100% - 40px);
+		}
+
+		button span.btn-icon {
+			float: right;
+			margin: auto 5px;
+			background: white;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			border-radius: 50%;
+			color: #011B33;
+			font-family: "Gilroy", sans-serif;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 26px;
+		}
+
+		@media screen and (min-width: 850px){
+			body#faq-page {
+				padding: 20px 100px;
+			}
+
+			body#faq-page .accordion-item-text-container, button.accordion-item-title {
+				padding: 1.5rem 3rem;
+			}
+		}
+	</style>
+</head>
+
+<body id="faq-page">
+	<main>
+		<h1 id="logo">CIRCE</h1>
+		<div class="text-center">
+			<h1>Frequently Asked Questions</h1>
+		</div>
+		<div id="faq-container" class="container-fluid"></div>
+	</main>
+	<footer class="container-fluid">
+		<p>© 2019 Circe HNG . All rights reserved.</p>
+	</footer>
+</body>
+<script src="app.js" type="text/javascript"></script>
+<script>
+	const getData = () =>{
+		//Fetch data from, for now a json
+		//Then using promise to complete other actions
+		fetch('/data/faq.json')
+		  .then(res=>res.json())
+		  .then(getFaqs)
+		  .then(()=>{btnListener()})
+		  .catch(err=> console.log(err));
+	}
+
+	const getFaqs = (data) =>{
+		const faqs = data.faq;
+		// console.log('faqs', faqs);
+		makeFaqHTML(faqs);
+	}
+
+	const makeFaqHTML = (faqs) =>{
+		const divFaq = document.querySelector('div#faq-container');
+		const frag = document.createDocumentFragment(); //savin some performance cost with Fragment
+		faqs.forEach(faq => {
+			//Create Elements
+			const div = document.createElement("div");
+			const divAccText = document.createElement("div");
+			const button = document.createElement("button");
+			const p = document.createElement("p");
+			const spanText = document.createElement("span");
+			const spanIcon = document.createElement("span");
+
+			//Adding classes
+			div.classList.add('accordion-item');
+			button.classList.add('accordion-item-title');
+			p.classList.add('accordion-item-text');
+			divAccText.classList.add('accordion-item-text-container');
+			spanIcon.classList.add('btn-icon');
+			spanText.classList.add('btn-text');
+
+			spanText.innerHTML = faq.title;
+			spanIcon.innerHTML = "+";
+			p.innerHTML = faq.text;
+
+			button.append(spanText);
+			button.append(spanIcon);
+
+			divAccText.append(p);
+
+			div.append(button);
+			div.append(divAccText);
+
+			frag.append(div);
+		});
+
+		//Now append to FAQ div
+		divFaq.append(frag);
+	}
+
+	const btnListener = () =>{
+		$("button.accordion-item-title").click(function(){
+			// ES6 class doesnt work with jQ
+			// console.log($(this));
+			
+			$(this).next().toggle("slow");
+			if($(this).children(".btn-icon").text() == "+"){
+				$(this).children(".btn-icon").html("-");
+			}else{
+				$(this).children(".btn-icon").html("+");
+			}
+		})
+	}
+
+	document.addEventListener("DOMContentLoaded", () =>{
+		getData();
+	});
+</script>
+</html>
