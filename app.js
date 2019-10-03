@@ -1,3 +1,17 @@
+// This is the "Offline page" service worker
+if ('serviceWorker' in navigator) {
+    if (navigator.serviceWorker.controller) {
+      console.log('PWA active service worker found, no need to register');
+    } else {
+      // Register the service worker
+      navigator.serviceWorker
+        .register('sw.js')
+        .then(function (reg) {
+          console.log('PWA Service worker has been registered for scope: ' + reg.scope);
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     /** Handles Document Object Manipulation
