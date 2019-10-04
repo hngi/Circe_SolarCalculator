@@ -10,5 +10,12 @@
     "description" : "A Solar Energy Calculator.",
     "orientation" : "any",
     "background_color" : "#ffffff",
-    "generated" : "true"
+    "generated" : "true",
+    "icons": [
+        {
+          "src": "logo.png",
+          "sizes": "144x144",
+          "type": "image/png"
+        }
+      ]
 }
