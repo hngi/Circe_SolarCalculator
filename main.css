@@ -156,3 +156,118 @@ h1{
         display: none;
     }
 }
+
+/* FAQ page  */
+
+body#faq-page main{
+    min-height: calc(100vh - 200px);
+}
+
+body#faq-page h1{
+    font-size: 45px;
+}
+
+body#faq-page .accordion-item-text-container {
+    display: none;
+    padding: 1rem 3rem;
+    margin: 0;
+}
+
+body#faq-page .accordion-item-text-container, button.accordion-item-title {
+    padding: 1.5rem;
+}
+
+body#faq-page .accordion-item-text-container p{
+    font-family: "Gilroy-Medium", san-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    padding: 0;
+}
+
+body#faq-page div.accordion-item {
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    margin: 0.5rem auto;
+    padding: 0;
+    border-radius: .4rem .4rem 0 0;
+}
+
+body#faq-page button.accordion-item-title {
+    background-color: #011B33;
+    border-radius: .4rem .4rem 0 0;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    margin:0;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    min-height: 54px;
+    font-family: "Gilroy-Medium", san-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+body#faq-page div#faq-container {
+    width: 90%;
+    max-width: 941px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body#faq-page footer{
+    margin-top: 2rem;
+}
+
+body#faq-page footer p {
+    font-family: "Segoe UI", san-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #000000;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+button.accordion-item-title {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span.btn-text {
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+}
+
+button span.btn-icon {
+    float: right;
+    margin: auto 5px;
+    background: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #011B33;
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+}
+
+@media screen and (min-width: 850px){
+    body#faq-page {
+        padding: 20px 100px;
+    }
+
+    body#faq-page .accordion-item-text-container, button.accordion-item-title {
+        padding: 1.5rem 3rem;
+    }
+}
