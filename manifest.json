@@ -1,14 +1,14 @@
 {
     "dir" : "ltr",
     "lang" : "en",
-    "name" : "Circe",
+    "name" : "Circe Solar Calculator App",
     "scope" : "/",
     "display" : "standalone",
-    "start_url" : "https://circe-solar-app.netlify.com/",
+    "start_url" : "https://roladefaq.netlify.com/",
     "short_name" : "Circe Solar",
     "theme_color" : "#011B33",
     "description" : "A Solar Energy Calculator.",
     "orientation" : "any",
-    "background_color" : "#fff",
+    "background_color" : "#ffffff",
     "generated" : "true"
 }
