@@ -4,7 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content ="width=device-width, initial-scale=1.0">
         <meta http-equiv="X_UA_compatible" content="ie-edge">
-        <link rel="stylesheet" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <link href='./main.css' rel='stylesheet' type="text/css">
+        <link href='./style.css' rel='stylesheet' type="text/css">
+        <link rel='manifest' href='./manifest.json'>
         <title>Circe Solar Calculator</title>
     </head>
     <div id="page">
@@ -23,24 +34,26 @@
               </div>
               
               <ul class="menulist">
+                  <li><a class="menuitems" href="index.html">Home</a></li>
                 <li><a class="menuitems" href="calculate.html">Calculator</a></li>		
                 <li><a class="menuitems" href="faq.html">FAQs</a></li>
               </ul>			
               </div>
               <div id="drop"></div>
-    
-            <h1> Calculate your Solar Requirement</h1>
-
+    <div class="text-center">
+        <h1> Solar Calculator App </h1>
+    </div>
+            
+            <div class="text-center">
             <h3>Circe is an app that allows you calculate 
-
-                how much power is required to run your home</h3>
-                <button id="but"><div id="calc"><a href="calculate.html"> Calculate <div id="now">Now</div></a></div></button>
-
-                
+                how much power is required to run your home appliances with Solar Energy! Go to our <a href="./faq.html" id="fq"> FAQs </a> &nbsp;page to learn more.
+              <p></p>Click the button below to get started</h3>
+                <button id="but"><div id="calc"><a href="calculate.html">Calculate <label id="now">Now</label></a></div></button>
+                </div>
                 <footer>
                         &copy; 2019 Circe HNG. All rights reserved
                 </footer>
               </div>
-                <script type="text/javascript" src="script.js"></script>
+                <script type="text/javascript" src="./js/script.js"></script>
         </body>
 </html>

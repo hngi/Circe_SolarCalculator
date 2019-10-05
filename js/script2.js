@@ -7,4 +7,3 @@ $(document).ready(function(){
     $(this).parent().siblings().removeClass('active'); 
     });
 });
-    
