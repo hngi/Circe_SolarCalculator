@@ -156,3 +156,28 @@ h1{
         display: none;
     }
 }
+footer{
+    background-color: #011B33;
+    padding: 10px;
+    color: white;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    font-family: 'Ginger Peachy NF', sans-serif;
+    font-size: 20px;
+}
+.card:hover{
+    box-shadow: box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+.center{
+    padding:0 15px;
+    font-weight: bold;
+}
+.h{
+    margin-bottom: 15px;
+}
+.he{
+    font-weight: bold;
+}
