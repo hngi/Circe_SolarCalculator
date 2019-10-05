@@ -1,4 +1,4 @@
-@import url('//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold');
+@import url('https://db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold');
 
 @import url('//db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium');
 
@@ -12,7 +12,11 @@ body{
     overflow-y:scroll;
     overflow-x: hidden;
     transition: background-color .5s;
-    max-width: 90%;
+    max-width: 100%;
+}
+#fq{
+    text-decoration: underline;
+    color: sandybrown;
 }
 nav{
     position: absolute;
@@ -100,7 +104,7 @@ nav{
     list-style:none; 
     font-family: 'Gilroy SemiBold';
     font-weight: 300;
-    font-size: 24px;
+    font-size: 16px;
     display: inline-block;
     position:relative;	
     text-align:left;
@@ -144,32 +148,20 @@ nav{
     font-size:30px;
 }
 h1{
-    position: absolute;
-    width: 799px;
-    height: 74px;
-    left: 250px;
-    top: 50px;
     text-align: center;
     font-family: 'Gilroy ExtraBold';
     font-size: 40px;
-    line-height: 59px;
+    /*line-height: 59px;*/
 }
 h3{
-    position: absolute;
-    width: 842px;
-    height: 116px;
-    left: 240px;
-    top: 238px;
-
+    padding: 5%;
     font-family: 'Gilroy-Medium';
     font-size: 33px;
     line-height: 39px;
 }
 #but{
-    position: absolute;
     width: 447px;
     height: 80px;
-    left: 417px;
     top: 400px;
     background: #F9FCFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -183,9 +175,6 @@ a{
     color: #000000;
 }
 #calc{
-    position: absolute;
-    width: 404px;
-    height: 76px;
     font-size: 52px;
     line-height: 5px;
     color: #000000;
@@ -194,11 +183,8 @@ a{
     
 }
 footer{
-    position: absolute;
-    width: 336px;
-    height: 28px;
-    left: 472px;
-    top: 546px;
+    margin: 28px;
+    
     font-family: Segoe UI;
     font-size: 18px;
     line-height: 24px;
@@ -206,6 +192,7 @@ footer{
 #page{
     position: relative;
 }
+
 @media only screen and (max-width: 1024px) {
     body{
         background: #011B33;
@@ -213,15 +200,9 @@ footer{
         text-align: center;
         overflow-y:scroll;
         transition: background-color .5s;
-        position: relative;
         max-width: 1024px;
     }
     h1 {
-        position: absolute;
-        width: 330px;
-        height: 40px;
-        left: 330px;
-        top: 40px;
         padding: 8px;
         margin-top: 20px;
         font-size: 40px;
@@ -229,25 +210,17 @@ footer{
     }
     nav {
         height: 80px;
-        top: 15px;
+        top: 30px;
     }
     h3{
-        position: absolute;
-        width: 360px;
-        height: 40px;
-        left: 330px;
-        top: 178px;
         font-family: 'Gilroy-Medium';
         font-size: 20px;
         line-height: 29px;
     }
     #but {
-        position: static;
         width: 303px;
         height: 80px;
         margin-right: 0px;
-        /* top: 1000px; */
-        margin-top: 280px;
         background: #F9FCFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 16px;
@@ -256,21 +229,12 @@ footer{
     }
 
     #calc {
-        position: absolute;
-        left: 300px;
-        /* width: 404px; */
-        height: 76px;
         font-size: 36px;
-        line-height: 5px;
         color: #000000;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: 'Gilroy ExtraBold';
     }
-    footer{
-        position: static;
-        margin-left: 310px;
-        margin-top: 100px;
-    }
+   
     #page{
         overflow-x: hidden;
     }
@@ -278,50 +242,24 @@ footer{
 }
 @media only screen and (max-width: 964px) {
     #but {
-        position: static;
-        width: 303px;
         height: 80px;
-        margin-left: 80px;
-        /* top: 1000px; */
-        margin-top: 280px;
-        background: #F9FCFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 16px;
-        font-family: 'Gilroy ExtraBold';
-        color: #000000;
     }
 
 }
-@media only screen and (max-width: 907px) {
-    #but {
-        position: static;
-        width: 303px;
-        height: 80px;
-        margin-left: 140px;
-        /* top: 1000px; */
-        margin-top: 280px;
-        background: #F9FCFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 16px;
-        font-family: 'Gilroy ExtraBold';
-        color: #000000;
-    }
 
-}
 @media only screen and (max-width: 780px) {
     h1{
+        padding-top: 4%;
         left: 225px;
     }
     h3{
         left: 225px;
     }
     #but {
-        position: static;
         width: 303px;
         height: 80px;
-        margin-left: 70px;
         /* top: 1000px; */
-        margin-top: 280px;
+        margin-top: 80px;
         background: #F9FCFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 16px;
@@ -329,12 +267,29 @@ footer{
         color: #000000;
     }
     #calc{
-        left: 205px;
+        font-size: 35px;
     }
-    footer{
-        margin-left: 240px;
-    }
+    
 
+}
+@media only screen and (max-width: 578px){
+    nav {
+        top: 25px;
+        left: -40px;
+    }
+    h1 {
+        left: 125px;
+    }
+    h3{
+        left: 105px;
+    }
+    
+    .navigation{
+        left: 75%;
+        width: auto;
+        top: 25px;
+    }
+    
 }
 @media only screen and (max-width: 430px) {
     h1{
@@ -346,27 +301,22 @@ footer{
         width: 380px;
     }
     #but {
-        position: static;
         width: 303px;
         height: 50px;
-        margin-left: 10px;
         /* top: 1000px; */
-        margin-top: 280px;
+        margin-top: 40px;
         background: #F9FCFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 16px;
         font-family: 'Gilroy ExtraBold';
         color: #000000;
     }
+    
     nav{
         left: 45px;
     }
-    #calc{
-        left: 0px;
-    }
-    footer{
-        margin-left: 20px;
-    }
+    
+    
     .navigation{
         width: 40%;
         position: static;
@@ -389,7 +339,7 @@ footer{
         height: 50px;
         margin-left: 10px;
         /* top: 1000px; */
-        margin-top: 280px;
+        margin-top: 30px;
         background: #F9FCFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 16px;
@@ -397,16 +347,17 @@ footer{
         color: #000000;
     }
     nav{
-        left: 45px;
-    }
-    footer{
-        margin-left: 12px;
+        left: 35px;
     }
     .navigation{
-        width: 40%;
+        width: 30%;
         position: static;
     }
-   
+    .navigation ul{
+        font-size: 12px;
+        padding-top: 60px;
+        padding: 15px;
+    }
 
 }
 @media only screen and (max-width: 320px) {
@@ -415,6 +366,7 @@ footer{
         font-size: 22px;
         margin-right: 40px;
         margin-top: 40px;
+        width: 100%;
     }
     h3{
         left: 15px;
@@ -422,11 +374,11 @@ footer{
     }
     #but {
         position: static;
-        width: 203px;
+        width: 150px;
         height: 50px;
         margin-left: 10px;
         /* top: 1000px; */
-        margin-top: 280px;
+        margin-top: 20px;
         background: #F9FCFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 16px;
@@ -437,12 +389,11 @@ footer{
         left: -1px;
     }
     #calc{
-        margin-left: -40px;
-        margin-right: 10px;
         font-size: 28px;
+        font-weight: 600;
     }
     footer{
-        margin-left: 20px;
+        font-size: 12px;
     }
     .navigation{
         width: 20%;
@@ -451,6 +402,4 @@ footer{
     #now{
         display: none;
     }
-   
-
 }

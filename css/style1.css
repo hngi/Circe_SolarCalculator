@@ -98,7 +98,7 @@ nav{
     list-style:none; 
     font-family: 'Gilroy SemiBold';
     font-weight: 300;
-    font-size: 24px;
+    font-size: 16px;
     display: inline-block;
     position:relative;	
     text-align:left;
@@ -142,11 +142,7 @@ nav{
     font-size:30px;
 }
 h1{
-    position: absolute;
-    width: 799px;
     height: 74px;
-    left: 300px;
-    top: 50px;
     text-align: center;
     font-family: 'Gilroy ExtraBold';
     font-size: 40px;
@@ -154,9 +150,9 @@ h1{
 }
 #search{
     position: absolute;
-    width: 680px;
+    width: 650px;
     height: 48px;
-    left: 330px;
+    left: 280px;
     top: 238px;
     padding: 20px; 
     font-family: 'Gilroy-Medium';
@@ -197,7 +193,7 @@ color: #000000;
     padding: 30px 0 20px;
     text-align: left; 
     width: 100%;
-    margin-top: 26%;
+    margin-top: 4%;
 }
 .acc h4{
     background-color: #011B33;
@@ -336,7 +332,7 @@ footer{
     position: absolute;
     width: 336px;
     height: 28px;
-    left: 552px;
+    left: 502px;
     margin-top: 150px;
     font-family: Segoe UI;
     font-size: 18px;
@@ -358,12 +354,11 @@ footer{
         left: 180px;
     }
     h1 {
-        position: absolute;
-        width: 330px;
+        position: sticky;
         height: 40px;
-        left: 330px;
-        top: 40px;
+        margin: 0 26.5%;
         padding: 8px;
+        padding-top: 10px;
         margin-top: 20px;
         font-size: 40px;
         line-height: 30px;
@@ -422,6 +417,9 @@ footer{
         font-family: 'Gilroy ExtraBold';
         color: #FFF;
     }
+    .faq-content{
+        margin-top: 10%;
+    }
     #add {
         position: static;
         width: 180px;
@@ -431,7 +429,6 @@ footer{
     #calc {
         position: absolute;
         left: 420px;
-        /* width: 404px; */
         height: 76px;
         font-size: 36px;
         line-height: 5px;
@@ -471,6 +468,9 @@ footer{
 
 }
 @media only screen and (max-width: 907px) {
+    h1{
+        padding-top: 20px;
+    }
     #but {
         position: static;
         width: 303px;
@@ -488,7 +488,8 @@ footer{
 }
 @media only screen and (max-width: 780px) {
     h1{
-        left: 225px;
+        left: 185px;
+        padding-top: 30px;
     }
     h3{
         left: 225px;
@@ -499,12 +500,18 @@ footer{
         margin-left: 200px;
         margin-top: 190px;
     }
+    .acc h4:after {
+        display: none;
+    }
     #search {
         position: absolute;
         width: 480px;
         height: 48px;
         left: 145px;
         top: 160px;
+    }
+    .faq-content{
+        margin-top: 12%;
     }
     #hoursPower {
         display: flex;
@@ -546,14 +553,18 @@ footer{
     }
 
 }
+
+
 @media only screen and (max-width: 430px) {
     h1{
-        left: 35px;
         font-size: 28px;
     }
     h3{
         left: 15px;
         width: 380px;
+    }
+    h4{
+        font-size: 20px;
     }
     #ht-blue{
         padding: 130px;
@@ -566,8 +577,11 @@ footer{
         top: 140px;
         font-size: 20px;
     }
-    h4{
+    .acc h4{
         font-size: 20px;
+    }
+    .acc h4:after {
+        display: none;
     }
     #electQty {
         display: flex;
@@ -619,7 +633,7 @@ footer{
         margin-left: 20px;
     }
     .navigation{
-        width: 40%;
+        width: 30%;
         position: static;
     }
    
@@ -627,7 +641,7 @@ footer{
 }
 @media only screen and (max-width: 380px) {
     h1{
-        left: 15px;
+        left: 25px;
         font-size: 28px;
     }
     h3{
@@ -636,6 +650,9 @@ footer{
     }
     #ht-blue{
         padding: 100px;
+    }
+    .a h4{
+        font-size: 20px;
     }
     #search {
         position: absolute;
@@ -691,18 +708,20 @@ footer{
         margin-left: 12px;
     }
     .navigation{
-        width: 40%;
+        width: 30%;
         position: static;
     }
-   
+   .navigation ul{
+       font-size: 12px;
+       padding-top: 60px;
+       padding: 15px;
+   }
 
 }
 @media only screen and (max-width: 320px) {
     h1{
         left: -15px;
-        font-size: 22px;
         margin-right: 40px;
-        margin-top: 40px;
     }
     h3{
         left: 15px;
