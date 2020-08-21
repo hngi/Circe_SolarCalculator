@@ -1,0 +1,306 @@
+
+@import url('https://db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold');
+
+@import url('https://db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium');
+
+@import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
+
+@import url('https://db.onlinewebfonts.com/c/67b3eff247faac84b33ae4640cb86e30?family=Gilroy-SemiBoldItalic');
+* {
+    box-sizing: border-box;
+}
+
+/*Fonts used on Figma design */
+
+body {
+    font-family: 'Gilroy-Regular', sans-serif;
+    background: #E5E5E5;
+    color: #011B33;
+    overflow: scroll;
+    transition: background-color .5s;
+}
+
+nav{
+    position: absolute;
+    width: 297px;
+    height: 120px;
+    left: 60px;
+    top: 31px;
+    font-family: 'Ginger Peachy NF';
+    font-size: 28px;
+    line-height: 38px;
+    color: #011B33;
+}
+.navigation {
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 31px;
+    background: #011B33;
+    left: 85%;
+    box-shadow: 0 4px 4px -3px #232323;
+    -moz-box-shadow: 0 4px 4px -3px #232323;
+    -webkit-box-shadow: 0 4px 4px -3px #232323;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-top: 0px;
+    height: 40px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    margin-top:30px;
+    text-align:center;
+    list-style:none; 
+    margin-left:0;
+    margin-right:auto;
+}
+
+
+.menulist {
+    width:80px;
+}
+
+
+.logo {
+    text-align:left;
+    margin:0 auto;
+}
+
+.line1, .line2, .line3 {
+  margin-top:5px;
+  background-color:#fff;
+  width:25px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity:0.0;
+  background-color:yellow;
+  top:5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color:yellow;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color:yellow;
+  top:-7px;
+}
+
+.menuitems {
+    padding-top:12px;
+    padding-bottom:12px;
+    text-decoration: none;
+    list-style:none; 
+    font-family: 'Gilroy SemiBold';
+    font-weight: 300;
+    font-size: 16px;
+    display: inline-block;
+    position:relative;	
+    text-align:left;
+    color: #fff;
+    opacity:0.0;
+    transition: all .5s ease-in-out;
+}
+
+.menuitems:after {
+  content:'';
+  display:block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .2s;
+}
+
+.menuitems:hover::after {
+    width:100%;
+}
+
+#closebtn {
+    height:25px;
+    width:25px;	
+    position: absolute;
+    text-decoration:none;
+    top: 10px;
+    left: 25px;
+    font-size: 36px !important;
+    margin-right: 50px;
+    z-index:100;
+    color:#fff;
+    cursor:pointer;
+    transition:background-position .3s;
+}
+#drop {	
+    transition: margin-top .4s;
+    text-align:left;
+    margin:auto;
+    padding: 16px;
+    font-size:30px;
+}
+
+#logo {
+    margin: 20px;
+    font-family: 'Ginger Peachy NF', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #011B33;
+}
+nav{
+    color: #011B33;
+}
+a{
+    color: #011B33;
+}
+
+h1{
+    font-family: 'Gilroy ExtraBold';
+    font-style: normal;
+    font-size: 40px;
+    line-height: 59px;
+    font-weight: 1000;
+}
+h3 {
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'Gilroy-Medium';
+}
+.alert {
+    padding: 20px;
+    background-color: #192438;
+    color: white;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+
+label{
+    font-size: 14px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Gilroy ExtraBold';
+}
+
+#add {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: #666;
+    color: white;
+}
+.remove {
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color:rgb(15, 15, 59);
+    color: white;
+}
+
+#calculate {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(14, 14, 36);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Gilroy ExtraBold';
+}
+
+.circe-display {
+    margin: 40px 20px;
+    background-color:#011B33;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px #999;
+    padding: 30px 5px;
+}
+
+.watts-display {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+#display {
+    margin: 20px 5px;
+    padding: 10px;
+}
+small{
+    font-family: 'Gilroy-SemiBoldItalic';
+}
+@media screen and (min-width: 768px){
+
+    #logo {
+        text-align: left;
+    }
+
+    div.alert{
+        display: none;
+    }
+}
+@media only screen and (max-width: 425px) {    
+    nav{
+        top:60px;
+        left: 45px;
+    }
+    .navigation{
+        width: 40%;
+        position: static;
+    }
+   
+}
+@media only screen and (max-width: 380px) {    
+    nav{
+        left: 45px;
+    }
+    .navigation{
+        width: 30%;
+        position: static;
+    }
+    .navigation ul{
+        font-size: 12px;
+        padding-top: 60px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    nav{
+        left: 0;
+        text-align: center;
+    }
+}
